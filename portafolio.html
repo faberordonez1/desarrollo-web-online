@@ -3,30 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <title>Faber Ordoñez</title>
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilos.css">
+        <style>
+            header{
+                background: rgb(32, 32, 63);
+            }
+        </style>
     </head>
     <body>
         <header>
+            <figure>
+                <img src="images/logo.png" alt="Logo Faber" width="60">Logo
+            </figure>
             <nav>
-                <ul>
+                <ol>
                     <li>
-                        <a href="">Portafolio</a>
+                        <a href="#portafolio">Portafolio</a>
                     </li>
                     <li>
-                        <a href="">Experiencia</a>
+                        <a href="#experiencia">Experiencia</a>
                     </li>
                     <li>
-                        <a href="">Trabajemos juntos</a>
+                        <a href="#contacto">Trabajemos juntos</a>
+                        
                     </li>
-                </ul>
+                </ol>
             </nav>
         </header>
         <section> 
             <h1>
-                Hola..! soy Faber <br>Desarrollador Web <br>Frontend
+                Hola..! soy Faber OrdoñeZ<br>Desarrollador Web <br>Frontend
             </h1>
-            <img> Imagen de portada
+            <img src="images/hero.png" width="500" height="300" alt="imagen principal del sitio">
         </section>
-        <section>
+        <section id="portafolio">
             <h2>Portafolio (Proyectos Destacados)</h2>
             <article>
                 <h3>Proyecto 1</h3>
@@ -36,20 +47,27 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque deserunt alias 
                     repellat quisquam porro eius magnam! Repellat iusto tenetur laudantium. Illo 
                     quasi eaque assumenda quam soluta labore enim vitae esse.</p>
+                <img src="images/proyecto.jpg" alt="primer proyecto" width="500">
             </article>
         </section>
-        <section>
+        <section id="experiencia">
             <h2>Mas Sobre mi experiencia</h2> 
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="images/evento.jpg" alt=""  width="500">
                 </figure>
                 <h3>Primera Conferencia</h3>
                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sapiente quasi quia aliquam iste vel, animi laboriosam incidunt illo nam optio consequuntur in quas nisi consectetur rerum necessitatibus nulla earum? </p>
-                <a href="">Ver conferencia</a>
+                <a href="https://youtu.be/22HeWPja-fk" target="_blank">Ver conferencia</a>
             </article>
         </section>
-        <section>Seccion contacto</section>
+        <section id="contacto">
+            <form action="/suscripcion/">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="tuemail@email.com" id="email">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
         <footer></footer>
     </body>
 </html>

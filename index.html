@@ -129,48 +129,89 @@
                   </ul>
                 </samp>
               </div>
-              <h4>Etiquetas HTML </h4>
-              <a href="https://allthetags.com/" target="_blank">listado de etiquetas 1 </a><a href="http://html5doctor.com/" target="_blank">  listado de etiquetas 2</a>
-              <P>Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.
-                <br>La sintaxis general de una etiqueta es:</P>
-                <div class="alert alert-dark mt-3">
-                  <samp>Etiqueta apertura, Contenido, etiqueta de cierre </samp>
-                </div>
-                <p>Hay ciertas etiquetas que tienen una sintaxis diferente, ya que se cierran en sí mismas;
-                   es decir, no tienen etiqueta de cierre se cierran con / en la etiqueta de apertura</p>
-                <p>Algunas de las etiquetas más conocidas y usadas son:</p>
-                <p><strong>Etiquetas de cabecera (head):</strong>
-                  <ul>
-                    <li>
-                      <strong>doctype:</strong> indica al navegador el tipo de documento que se está mostrando.
-                    </li>
+
+            <h4>Etiquetas HTML </h4>
+            <a href="https://allthetags.com/" target="_blank">listado de etiquetas 1 </a><a href="http://html5doctor.com/" target="_blank">  listado de etiquetas 2</a>
+            <P>Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.
+              <br>La sintaxis general de una etiqueta es:</P>
+              <div class="alert alert-dark mt-3">
+                <samp>Etiqueta apertura, Contenido, etiqueta de cierre </samp>
+              </div>
+              <p>Hay ciertas etiquetas que tienen una sintaxis diferente, ya que se cierran en sí mismas;
+                  es decir, no tienen etiqueta de cierre se cierran con / en la etiqueta de apertura</p>
+              <p>Algunas de las etiquetas más conocidas y usadas son:</p>
+              <p><strong>Etiquetas de cabecera (head):</strong>
+                <ul>
                   <li>
-                    <strong>html:</strong> es la etiqueta que envuelve todo el documento
+                    <strong>doctype:</strong> indica al navegador el tipo de documento que se está mostrando.
                   </li>
-                  <li>
-                    <strong>head:</strong> es la cabecera del documento y contiene sub etiquetas que describen al documento o incluyen recursos adicionales.
-                  </li>
-                </ul>
-                </p>
+                <li>
+                  <strong>html:</strong> es la etiqueta que envuelve todo el documento
+                </li>
+                <li>
+                  <strong>head:</strong> es la cabecera del documento y contiene sub etiquetas que describen al documento o incluyen recursos adicionales.
+                </li>
+              </ul>
+              </p>
 
-                <p><strong>Etiquetas del cuerpo del documento (body):</strong>
-                  <ul>
-                    <li><strong>article:</strong> diferencia partes del contenido que pueden vivir por sí mismas.</li>
-                    <li><strong>nav:</strong> para hacer menús de navegación</li>
-                    <li><strong>aside: </strong> contenido menos relevante, como publicidad, etc.</li>
-                    <li><strong>section: </strong>sirve para diferenciar las secciones principales del contenido.</li>
-                    <li><strong>header: </strong>cabecera del documento</li>
-                    <li><strong>footer: </strong>pie de pagina del documento</li>
-                    <li><strong>h1 - h6: </strong> titulos de nuestro sitio web</li>
-                    <li><strong>tables:</strong>tablas de contenidos, similar a la estructura de las hojas de calculo.</li>
-                    <li><strong>ul y ol: </strong>lista de items</li>
-                    <li><strong>div: </strong>cualquier división para organizar el contenido.</li>
-                </ul>
-                </p>
+              <p><strong>Etiquetas del cuerpo del documento (body):</strong>
+                <ul>
+                  <li><strong>article:</strong> diferencia partes del contenido que pueden vivir por sí mismas.</li>
+                  <li><strong>nav:</strong> para hacer menús de navegación</li>
+                  <li><strong>aside: </strong> contenido menos relevante, como publicidad, etc.</li>
+                  <li><strong>section: </strong>sirve para diferenciar las secciones principales del contenido.</li>
+                  <li><strong>header: </strong>cabecera del documento</li>
+                  <li><strong>footer: </strong>pie de pagina del documento</li>
+                  <li><strong>h1 - h6: </strong> titulos de nuestro sitio web</li>
+                  <li><strong>tables:</strong>tablas de contenidos, similar a la estructura de las hojas de calculo.</li>
+                  <li><strong>ul y ol: </strong>lista de items</li>
+                  <li><strong>div: </strong>cualquier división para organizar el contenido.</li>
+              </ul>
+              </p>
+            
+            <h4>Estructura de nuestro sitio web</h4>
+            <p>El proyecto que desarrollaremos en este curso se trata de un Portafolio Personal, incluirá una cabecera, navegación, un hero (área visual con información destacada), un área de proyectos y otra para eventos, y finalmente un pié de página con un formulario de contacto y enlaces a redes sociales.</p>
+            <p>El archivo index.html es el archivo que el navegador abre por defecto al acceder a un directorio en un servidor web.</p>
+            
+            
+            <h4>Atributos HTML</h4>
+            <p>Son los encargados de dar funciones adicionales a las etiquetas y se declaran en la etiqueta de apertura,<br><br>
+             
+              Por ejemplo en el atributo <strong>href</strong> de la etiqueta <strong>a</strong> debemos indicar el link al que queremos visitar
+            </p>
+            <div class="alert alert-dark mt-3">
+              <samp> nombreatributo="valorAtributo"  //estructura<br>
+               href="url.com"  //ejemplo
+              </samp>
+            </div>
+
+            <h4>Formularios HTML</h4>
+            <P>
+              Se usan para capturar o manejar informacion y enviarla al encargado del sitio o enviarlos al servidor y su etiqueta es
+              <strong>form</strong> y dentro de ella se utilizan las estiquetas que capturan datos como input,label,button etc.
+            </P>
 
 
+            <h4>Enlaces o navegacion entre secciones HTML</h4>
+            <p>Lo que caracteriza a la web como medio de comunicación es la navegación por medio de hipervínculos (links o enlaces). Esta conexión entre archivos permite al usuario elegir el sentido de la navegación.</p>
+            <p>En el HTML los enlaces se marcan con la etiqueta <strong>a</strong> y el atributo principal es href="" donde se escribe la ubicación del archivo de destino que puede estar en la misma carpeta que el archivo que lo está llamando, en otra carpeta del mismo sitio o en otro sitio web.</p>
 
-          </div>
+
+            <h4>Formas de agregar estilos en HTML</h4>
+            <p>Existen 3 formas de agregar estilos a nuestro sitio : </p>
+            <p><strong>Estilo en línea (Inline):</strong>
+              Utiliza el atributo <u>style</u>.
+              No es para nada recomendado ya que Html sirve para definir la estructura y semántica del código y no el aspecto visual, aquí estaríamos mezclando todo.</p>
+            <p><strong>Estilo interno (Internal):</strong>
+              Utiliza una etiqueta
+                <u>style</u>            
+              Separa en cierto modo, de una forma menos sucia (por decirlo así). Esta forma sigue sin ser la más recomendada porque seguimos mezclando lo que es el aspecto visual con la estructura y semántica del código.</p>
+            <p><STRONG> 	Estilo externo (External): </STRONG>
+              Utilizando un archivo CSS externo al documento HTML.
+              Esta es la forma más recomendada porque estamos separando totalmente la estructura y semántica con el aspecto visual.</p>
+
+
+          </div><!--END HTML-->
 
     </div><!--END MAIN-->
 <hr>
@@ -185,7 +226,7 @@
                 </div>
 
                 <div class="alert alert-dark mt-3">
-                  <samp>about:blank</samp>
+                  <samp>Alt+Shift+DownArrow o Shift+Alt+UpArrow = Duplica la linea(windows)</samp>
                 </div>
 
                 <div class="alert alert-warning mt-3">
