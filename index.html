@@ -88,7 +88,7 @@
             <h5>Ajustes Basicos de VS Code <a href="https://platzi.com/clases/1350-html5-css3/13346-software-para-trabajar-en-desarrollo-web-e-introdu/">▶</a></h5>
           </div>
 
-          <div>
+          <section>
             <h2>HTML</h2>
             <hr>
             <h4>DOM</h4>
@@ -209,9 +209,61 @@
             <p><STRONG> 	Estilo externo (External): </STRONG>
               Utilizando un archivo CSS externo al documento HTML.
               Esta es la forma más recomendada porque estamos separando totalmente la estructura y semántica con el aspecto visual.</p>
+            </section><!--END HTML-->
+
+          <section>
+            <h2>CSS</h2>
+            <hr>
+            <h4>Reglas, Selectores,declaraciones propiedades y valores de CSS</h4>
+            <img src="images/selector.jpg" alt="" width="400" class="mb-4">
+
+            <h6>Reglas</h6>
+            <p>Es la declaracion completa que incluye selector, declaracion, propiedad y valor, a continuacion dejo un ejemplo</p>
+            <div class="alert alert-dark mt-3">
+              <samp>header{<br>
+                background:red;<br>
+              }<br><hr>
+              selector{<br>
+                propiedad:valor;<br>
+              }<br>
+              </samp>
+            </div>
+
+            <h6>Selectores</h6>
+            <p>Son la forma de identificar uno o mas elementos en nuestro HTML, funcionan con etiquetas, clases y ID y existen 3 tipos:</p>
+            <ol>
+              <li>
+                <strong>Etiqueta: </strong>Hace refencia directamente al nombre de la etiqueta html ejemplo (nav, header,section, div etc.)
+              </li>
+              <li>
+                <strong>Descendente: </strong>Es un elemento hijo de otro elemento de acuerdo a la estructura HMTL ejemplo (tagppal tagpadre taghijo etc)
+              </li>
+              <li>
+                <strong>Id y/o clase: </strong>Nos evita escribir un selector descendente tan encadenado grande y complejo, las clases  y ID son atributos dentro de HTML, 
+                su diferencia principal es que las clases se pueden usar las veces que se necesario y todos reciben el mismo estilo y el ID una unica vez, porque solo asigna estilo a un ID y los demas los ignora
+                <div class="alert alert-dark mt-3">
+                    <samp >#nombreID{<br>
+                      background:red;<br>
+                    }<br><hr>
+                    .nombreClase{<br>
+                      propiedad:valor;<br>
+                    }<br>
+                    </samp>
+                </div>
+            </ol>
+
+            <h6>Declaracion</h6>
+            <p>Son todos los valores que estan dentro de las llaves de los selectores y se componen de propiedades y valores, cada declaracion se separa con ;</p>
+
+            <h4>Estilos incluidos en el navegador</h4>
+            <p>Son los estilos que el navegador por defecto le asigna a la estructura HTML pueden cambiar segun el navegador o SO, por lo general al inspeccionar se identifican con la linea <u>user agent stylesheets</u> todos estos valores se modifican con CSS</p>
 
 
-          </div><!--END HTML-->
+
+            <h4>Agregando Clases a estructura HTML</h4>
+
+
+          </section><!--END CSS-->
 
     </div><!--END MAIN-->
 <hr>
