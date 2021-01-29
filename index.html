@@ -260,7 +260,56 @@
 
 
 
-            <h4>Agregando Clases a estructura HTML</h4>
+            <h4>Unidades de medida y colores <a href="https://developer.mozilla.org/es/docs/Web/CSS/color_value">📃</a></h4>
+            <p>Dentro de CSS podemos representar un color de 3 formas:</p>
+            <h5>Colores</h5>
+            <ol>
+              <li>
+                 <strong>Palabra Clave: </strong> Por lo general son el nombre del color en ingles ejem: (blue, red, transparent, gray etc.) 
+              </li>
+              <li>
+                <strong>Hexadecimales rgb(),rgba(): </strong> Se utilizan para representar colores exactos, y estan 
+                compuestos por un numeral y 6 caracteres o pueden ser 3 en caso de que se repita el valor en el par(#FF0099),
+                cada par de caracteres equivale a una letra o color de acuerdo al termino RGB (red,green,blue). Los valores de cada caracter que conforman el hexadecimal deben estar conformados por 1 de los 16 diferentes valores 
+                (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F), donde el menor valor es 0 y el maximo es F, es decir, cuando el valor es cero hay ausencia de color por ende es color negro y cuando el valor es  F tiene todo el color
+                 y equivale a blanco, de acuerdo a las variacion de los caracteres se componen todos los diferentes colores a continuacion algunos ejemplos:
+                 <div class="alert alert-dark mt-3">
+                  <samp>
+                    RGB (Red,Green,Blue)(Rojo,Verde,Azul)<br>
+                    #FF0000 o #F00 => Rojo (Red)<br>
+                    #00FF00 o #0F0 => Verde (Green)<br>
+                    #0000FF o #00F => Azul (Blue)<br>
+                    #000000 o #000 => Negro <br>
+                    #FFFFFF o #FFF => Blanco<br>
+                    #F0F0F0 o #F0F0 => Gris
+                  </samp>
+                </div>
+                </li>
+              <li><strong>HSL (Hue,Saturacion,Luminosity)(Tono de color, Saturacion, Luminosidad): </strong> permite usar colores de manera similar a los hexadecimales, 
+                pero se estructuran de forma diferente:<br>
+                hsl(120,75%,50%)<br>
+                <u>El primer valor</u> del ángulo sigue las reglas de la trigonometría para medir los ángulos, tiene limites de 0 grados a 360 grados, y no se admiten numeros negativos.
+                Ej: 120 grados, 45 grados, 0 grados, 360grados etc.<br>
+                <u>El segundo valor</u> es para la saturación (saturación) del color. Su valor se expresa en porcentaje. Un 
+                valor igual al 100% representa saturación total del color y 0 es un ligero sombreado gris de saturación<br>
+                <u>El tercer valor</u> es para el brillo (ligereza). Su valor se expresa en porcentaje. Un valor igual al 100% resulta en color blanco y 0 en color negro, 
+                siendo el 50% el valor normal.<br><br>
+                <strong>HSLA = equivalen a (tonalidad, saturación, ligereza, alfa-opacity)</strong> es una manera extendida de la declaración HSL en la que un cuarto argumento define la opacidad del color. Este cuarto argumento es un número decimal entre 0 y 1.
+
+                se rige a las mismas reglas que el HLS, pero incluyendo la opacidad <u>campo A (opacidad alfa)</u> este valor admite decimales de 0 a 1 siendo 0 transparentes y 1 opaco. Los valores decimales se escriben con un punto de punto. Ejemplo: 0.5
+              </li>
+            </ol>
+            <h5>Pixeles</h5>
+            <P>Son la Unidades de medida dentro del mundo digital, y un pixel es la menor unidad 
+              homogenea de color que forma parte de un imagen digital, los pixel lo podemos ver si hacemos zoom al maximo a la imagen,
+              cada pixel es el pequeño cuadro que se puede observar.<br>
+              Esta unidad de medida en css  se utiliza para asignar tamaños a imagenes, texto, bordes, dimensiones, margenes, 
+              rellenos, etc.  aunque tambien existen otras unidades de medida como los REM,EM etc.
+              </P>
+            
+              <h4>Inspector de elementos</h4>
+
+
 
 
           </section><!--END CSS-->
