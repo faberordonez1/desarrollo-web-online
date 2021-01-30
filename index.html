@@ -260,7 +260,7 @@
 
 
 
-            <h4>Unidades de medida y colores <a href="https://developer.mozilla.org/es/docs/Web/CSS/color_value">📃</a></h4>
+            <h4>Unidades de medida  y colores <a href="https://platzi.com/blog/unidades-de-medida-en-css/" target="_blank">📝</a><a href="https://developer.mozilla.org/es/docs/Web/CSS/color_value">📃</a></h4>
             <p>Dentro de CSS podemos representar un color de 3 formas:</p>
             <h5>Colores</h5>
             <ol>
@@ -307,8 +307,45 @@
               rellenos, etc.  aunque tambien existen otras unidades de medida como los REM,EM etc.
               </P>
             
-              <h4>Inspector de elementos</h4>
+              <h4>Fuentes y Tipografias CSS</h4>
+              <p>En css podemos cambiar la fuente con el atributo <u>font-family:nombreFuente</u> esta propiedad tambien permite
+              agregar varios tipos de fuente separandolos con coma, para situaciones en las que el usuario no disponga de la fuente principal solicitada, automaticamente css continua con la
+              siguiente fuente.</p>
 
+              <p>Para que funcione cualquier fuente tipografica en css es importante que el usuario la tenga 
+                instalada en el equipo o enlazada de un sitio web de fuentes ejem (google fonts)</p>
+              <h6>Agregando fuente de Google fonts a css</h6>
+              <ol>
+                <li>Ingresar a Google Fonts</li>
+                <li>Buscar la fuente que necesitamos</li>
+                <li>Seleccionar los estilos que queremos en la fuente</li>
+                <li>En el botón superior derecho en donde podemos ver las fuentes seleccionadas y copiamos el Embed Standart. Si necesitamos otra fuente primero la agregamos</li>
+                <li>Pegamos el embed standart por dentro de la etiqueta head. Se recomienda pegarla antes de nuestra hoja de estilos.</li>
+              </ol>
+              <div class="alert alert-warning mt-3">
+                Cuando el nombre de una fuente tipográfica tiene mas de una palabra en css debemos encerrar su nombre en comillas simples. 
+              </div>
+              <h5>Propiedades de los textos</h5>
+              <p>Estas propiedades nos permiten modifcar tamaños, tipos, subrayados de las fuentes tipograficas a continuacion
+                el listado de algunas propiedades:
+              </p>
+              
+              <div class="alert alert-dark mt-3">
+                <samp>
+                  line-height // modificar el alto de linea<br>
+                  font-size // modificar el tamaño de la fuente<br>
+                  font-weight // modificar el peso de la fuente<br>
+                  font-style // modificar el estilo de la fuente<br>
+                  letter-spacing // modificar el espacio entre letras<br>
+                  text-transform // transformar la fuente (mayusculas, minuculas, etc)<br>
+                  text-decoration // moodificar la decoración de la fuente<br>
+                </samp>
+              </div>
+
+
+              <h4>Dimensiones fijas para elementos</h4>
+              <p>Con estas propiedades definimos los tamaños fijos de los elementos, las propiedades width y height
+               son la propiedades con las que se modifican y pueden recibir como valor cualquier unidad de medida</p>
 
 
 
@@ -327,7 +364,10 @@
                 </div>
 
                 <div class="alert alert-dark mt-3">
-                  <samp>Alt+Shift+DownArrow o Shift+Alt+UpArrow = Duplica la linea(windows)</samp>
+                  <samp>Alt+Shift+DownArrow o Shift+Alt+UpArrow = Duplica la linea(windows)<br>
+                    Ctrl + K +C comentarás esa sección de código. Ctrl + K + U descomentará el código<br>
+                    <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Atajos VS Code</a>
+                  </samp>
                 </div>
 
                 <div class="alert alert-warning mt-3">
@@ -338,7 +378,7 @@
                       </li>
                       <li>
                         Debe empezar siempre con una letra, las minúsculas y las mayúsculas
-                        importan, son diferentes
+                        important, son diferentes
                       </li>
                       <li>No se permiten caracteres especiales como Ñ etc..</li>
                       <li>Permite inicar el nobre con _ o con signo $ y funciona</li>
