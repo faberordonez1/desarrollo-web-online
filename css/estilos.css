@@ -1,3 +1,8 @@
+/* Gris osc #1D252C
+Gris cl #626262
+Background gris #1B2127
+celeste=#026FFF
+ */
 body{
     font-family: 'source sans pro', sans-serif;
 }
@@ -9,11 +14,37 @@ h1{
     line-height: 1.5;
     font-weight: normal;
     letter-spacing: -.2px;
+    color: #ffffff;
+}
+h1 strong{
+    color: #026FFF;
+}
+.hero{
+    height: 300px;
+    background-image: url('../images/heroo.jpg');
+    background-color:#1D252C;
+    background-size:500px 300px;
+    background-repeat:no-repeat;
+    background-position-x: right;
+
+}
+.project{
+    border: 2px gray solid;
+    border-radius: 1px;
+
 }
 .project-details{
     width: 500px;
 
 }
-.hero{
-    height: 300px;
+.project-imageContainer{
+    width: 500px;
+}
+header{
+    background-color: #1b2127;
+    color: white;
+}
+header a{
+    color: white;
+    text-decoration: none;
 }
