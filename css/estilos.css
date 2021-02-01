@@ -5,6 +5,7 @@ celeste=#026FFF
  */
 body{
     font-family: 'source sans pro', sans-serif;
+    margin:0;
 }
 h1,h2,h3,h4,h5,h6{
     font-family:'fjalla one', sans-serif;
@@ -29,12 +30,17 @@ h1 strong{
     background-position-x: right;
 
 }
+.portfolio{
+    background: #FAFAFA;
+}
 .project{
     border: 1px gray solid;
     border-radius: 10px;
     box-shadow:0px 0px 5px rgb(24, 19, 19);
+    margin: 10px;
     margin-bottom: 15px;
-
+    padding: 30px;
+    background: white;
 }
 .project-details{
     width: 500px;
