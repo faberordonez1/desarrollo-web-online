@@ -212,7 +212,7 @@
             </section><!--END HTML-->
 
           <section>
-            <h2>CSS</h2>
+            <h2>CSS</h2><a href="https://cssreference.io/">Listado atributos css</a>
             <hr>
             <h4>Reglas, Selectores,declaraciones propiedades y valores de CSS</h4>
             <img src="images/selector.jpg" alt="" width="400" class="mb-4">
@@ -412,6 +412,39 @@
                 y en base a este el ancho total nunca cambiara simpre se mantiene como se definio.
               </p>
 
+              <h4>Tipos de Displays</h4>
+              <p>Display es la propiedad más importante para controlar estructuras. Cada elemento tiene un valor de
+                 display por defecto dependiendo de qué tipo de elemento sea. El valor por defecto para la mayoría 
+                 de los elementos es usualmente block (de bloque) o inline (en línea). Un elemento que es block 
+                 es comunmente llamado elemento block-level. Un elemento inline siempre es llamado elemento inline.</p>
+                 <img src="images/display.jpg" alt=""><br>
+                 <a href="https://www.youtube.com/watch?v=T9NHZUls32k">Video refuerzo ▶</a>
+                 <p><strong>Display Block: </strong>Hace que un elemento ocupe todo el ancho posible sin
+                   importar la cantidad de contenido<br>
+                   <strong> Display inline:</strong> Hace que el elemento ocupe unicamente el ancho del contenido, 
+                   permitiendo que al lado se posicione otro elemento que tenga la misma propiedad, por lo general las 
+                   tag de texto se comportan de esta manera. <i>La desventaja esta propiedad es que anula
+                    el atributo width definido al contenedor y todo el modelo de caja, unicamente ocupa el espacio del contenido</i><br>
+                   <strong>Display inline-block: </strong> Realiza lo mismo que display inline, con la ventaja que este atributo si respeta 
+                   el ancho asignado al contendedor, permitiendo manejar el width y facilita apilar varios elementos<br>
+                   <strong>Display flex:</strong> asume algunas propiedades por defecto que favorecen la alineación de los elementos internos.<br>
+                   <strong>Display grid:</strong> similar a flex, asume algunas propiedades por defecto organizando los contenidos en filas y columnas.<br>
+                   <strong>Display  none:</strong> oculta el elemento.
+                  </p>
+
+              <h4>Flexbox (diplay:flex) <a href="https://filisantillan.com/blog/el-gran-poder-de-css3-flexbox/">📝</a></h4>
+              <h6><a href="https://flexboxfroggy.com/#es">Game flexbox</a> <a href="http://www.flexboxdefense.com/">Game 2</a></h6>
+              <a href="https://flexbox.help/">Simulador de flexbox</a>
+              <p>Esta propiedad se le aplica al padre y afecta a sus hijos directos y los alinea, si en el ancho total
+                no caben todos los hijos, se altera el width y/o modelo de caja,reduciendo el width para hacer que todos 
+                quepan en la misma linea, si no queremos que se altere este width, debemos aplicar el atributo 
+                <strong>flex-shrink (capacidad de encogimiento)</strong> al hijo, esta propiedad funciona con valores  0 a 1,
+                donde 1 equivale al 100% y cero es cero, con esta propiedad a los hijos ya no se les modifica el ancho y si no 
+                caben en el ancho de la pantalla, generan un scroll a la derecha. Si queremos anular este scroll y que los elementos
+                que no caben caigan creando otra fila, le aplicamos al padre la propiedad <strong>flex-wrap:wrap</strong>(por defecto esta en nowrap, es decir los hijos no caen a la siguiente linea)</p>
+
+                <p><strong>flex direction:column o row:</strong> Esta propiedad se le asigna al padre y es donde se indica como
+                  se alinean los hijos en 1 sola fila o una sola columna</p>
 
 
           </section><!--END CSS-->

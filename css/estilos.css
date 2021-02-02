@@ -57,3 +57,15 @@ header a{
     color: white;
     text-decoration: none;
 }
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    border:1px #026FFF solid;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    margin: 20px;
+}
