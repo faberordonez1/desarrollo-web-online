@@ -435,22 +435,67 @@
               <h4>Flexbox (diplay:flex) <a href="https://filisantillan.com/blog/el-gran-poder-de-css3-flexbox/">📝</a></h4>
               <h6><a href="https://flexboxfroggy.com/#es">Game flexbox</a> <a href="http://www.flexboxdefense.com/">Game 2</a></h6>
               <a href="https://flexbox.help/">Simulador de flexbox</a>
-              <p>Esta propiedad se le aplica al padre y afecta a sus hijos directos y los alinea, si en el ancho total
+              <p>Flexbox es un sistema de elementos flexibles que llega con la idea de olvidar estos mecanismos y 
+                acostumbrarnos a una mecánica más potente, limpia y personalizable, en la que los elementos HTML 
+                se adaptan y colocan automáticamente y es más fácil personalizar los diseños. Está especialmente 
+                diseñado para crear, mediante CSS, estructuras de una sóla dimensión.</p>
+              
+              <h6>Propiedades</h6>
+              <p><strong>Flex</strong>  Se le aplica al contenedor padre, y esto afectará a los hijos directos y por defecto se apilan la derecha 
+                Si existen varios elementos hijos la propiedad calcula el ancho automatico para que todos quepan en el ancho de la pantalla, perderán
+                la dimensión configurada modelo de caja o width<br>           
+                <strong>flex-shrink: </strong>Propiedad utilizada en los hijos que posean en el padre la propiedad display flex, 
+                identifica la capacidad de encogimiento respecto al ancho definido. esta propiedad funciona con valores 0 a 1, donde 1 equivale al 100% y cero es cero<br>
+                
+                <strong>flex direction:</strong> Esta propiedad se le asigna al padre y es donde se indica como
+                se alinean los hijos en 1 sola fila (row) (viene por defecto) o una sola columna(column)
+                <br><strong>flex-wrap:</strong> Propiedad del elemento padre, puede ser nowrap (por defecto) o wrap 
+                se utiliza para que los elementos que no caben en el ancho de la pantalla automaticamente pasen a la siguiente linea
+                y asi evitar el scroll horizontal
+              </p>
+              <p>La propiedad flex se le aplica al contenedor padre y afecta a sus hijos directos y los alinea, si en el ancho total
                 no caben todos los hijos, se altera el width y/o modelo de caja,reduciendo el width para hacer que todos 
                 quepan en la misma linea, si no queremos que se altere este width, debemos aplicar el atributo 
                 <strong>flex-shrink (capacidad de encogimiento)</strong> al hijo, esta propiedad funciona con valores  0 a 1,
                 donde 1 equivale al 100% y cero es cero, con esta propiedad a los hijos ya no se les modifica el ancho y si no 
                 caben en el ancho de la pantalla, generan un scroll a la derecha. Si queremos anular este scroll y que los elementos
-                que no caben caigan creando otra fila, le aplicamos al padre la propiedad <strong>flex-wrap:wrap</strong>(por defecto esta en nowrap, es decir los hijos no caen a la siguiente linea)</p>
+                que no caben caigan creando otra fila, le aplicamos al padre la propiedad <strong>flex-wrap:wrap</strong>
+                (por defecto esta en nowrap, es decir los hijos no caen a la siguiente linea)
+              </p>
+              <h5>Alineacion Horizontal flexbox (justify-content)</h5>
 
-                <p><strong>flex direction:column o row:</strong> Esta propiedad se le asigna al padre y es donde se indica como
-                  se alinean los hijos en 1 sola fila o una sola columna</p>
-                  <p>Flex funciona con respecto de sus padres, y esto afectará a los hijos directos
-                    Si existen varios elementos , estos estarán uno al lado del otro, perderán la dimensión configurada
-                    
-                    flex-direction: Dirección del flex, puede ser row (fila) o column (columna)
-                    flex-shrink: Propiedad utilizada en los hijos que posean el padre la propiedad display flex, identifica la capacidad de encogimiento. 0 (no cambia el tamaño) y 1 (cambia el tamaño de los elementos)
-                    flex-wrap: Propiedad del elemento padre, puede ser nowrap (los elementos no caen a la parte inferior) o wrap (los elementos se acomodan al tamaño de la ventana)</p>
+              <div class="alert alert-warning mt-3">
+                <p>El orden de alineacion de estas propiedades (justify-content o align-items) depende 100% de la propiedad flex-diection
+                  aplicada al contenedor padre, la alineacion se pueden invertir de acuerdo este.
+                </p>
+              </div>
+              <p>Esto define la alineación a lo largo del eje principal (main-axis). Ayuda a distribuir el espacio libre adicional 
+                que queda cuando todos los elementos flexibles de una línea son inflexibles o son flexibles pero 
+                han alcanzado su tamaño máximo. También ejerce cierto control sobre la alineación de los elementos 
+                cuando desbordan la línea., necesitamos la propiedad justify-content, <br><u> *Cuando el elemento lleva la 
+                propiedad display: flex NO aplica el “margin collapsing”, por ende los márgenes se suman</u>
+
+              </p>
+              <p>
+                <strong>flex-start:</strong>(predeterminado) Alinea elementos al inicio o lado izquierdo del contenedor.<br>
+                <strong>flex-end:</strong> Alinea elementos al final o lado derecho del contenedor.<br>
+                <strong>center:</strong> Alinea elementos en el centro del contenedor.<br>
+                <strong>space-between:</strong> Muestra elementos con la misma distancia entre ellos a excepcion de los extremos.<br>
+                <strong>space-around:</strong> Muestra elementos con la misma separación alrededor de ellos si estan juntos se suma el espacio (no aplica margin collapsing)<br>
+                <strong>space-evenly</strong> Muestra la misma separacion entre ellos y en los extremos
+              </p>
+              <img src="images/flexbox-justify-content.jpg" alt="">
+
+              <h5>Alineacion Vertical flexbox (align-items)</h5>
+              <p>Esto define el comportamiento predeterminado de cómo se distribuyen los elementos flexibles a lo largo 
+                del eje transversal en la línea actual. Funciona igual a justify-content pero en el eje transversal 
+                (perpendicular al eje principal).</p>
+              <p><strong>flex-start:</strong> Alinea elementos a la parte superior del contenedor.<br>
+                <strong>flex-end:</strong> Alinea elementos a la parte inferior del contenedor.<br>
+                <strong>center:</strong> Alinea elementos en el centro (verticalmente hablando) del contenedor.<br>
+                <strong>baseline:</strong> Muestra elementos en la línea base del contenedor<br>
+                <strong>stretch:</strong> Elementos se estiran para ajustarse al contenedor.</p>
+                <img src="images/flexbox-align-items.svg" alt="" width="300">
 
 
           </section><!--END CSS-->

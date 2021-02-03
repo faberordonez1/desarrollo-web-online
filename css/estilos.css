@@ -61,11 +61,14 @@ header a{
 .flexbox{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
 }
 .box{
     border:1px #026FFF solid;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     flex-shrink: 0;
     margin: 20px;
 }
