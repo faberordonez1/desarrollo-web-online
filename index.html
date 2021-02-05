@@ -497,6 +497,36 @@
                 <strong>stretch:</strong> Elementos se estiran para ajustarse al contenedor.</p>
                 <img src="images/flexbox-align-items.svg" alt="" width="300">
 
+               <h5>Aplicando estilos al header</h5>
+               <ol>
+                  <li>Se aplica la propiedad flex al padre (header en este caso) y luego se alinea horizontalmente con justify-content.<br>
+                  </li>
+                  <li>No se recomienda centrar los elementos verticalmente desde el elemento flex
+                  principal o padre porque la etiqueta clickeable no abarcaria todo el ancho y alto,
+                  unicamnete tomaria lo que abarque el texto, ver siguiente punto</li>
+                  <li>Para que el area de la etiqueta clickeable ocupe todo el espacio disponible, 
+                  asignamos alto al fijo al contenedor ppal (header en este caso) y  a continuacion se lo heredamos
+                  a todos los hijos con la propiedad height-ineherit hasta llegar a la etiqueta clickeable <u> El objetivo del este alto fijo sera alinear los items verticalmente de acuerdo a esa altura
+                  </u></li>
+                  <li>Aplicamos flex a la etiqueta ol y dejamos por defecto, esto para alinear horizontalmente el listado de items</li>
+                  <li>Aplicamos flex a los ultimos elementos, es decir elementos clickeables, los centramos verticalmente y herdamos el alto que se viene heredando desde el header,
+                    <u>El objetivo es que el flexbox no rompa el alto heredado en los contenedores padres para que la tag clickeable tenga toda la zona activa.</u>
+                  </li>
+               </ol>
+
+               <h5>Estilos Seccion PPal  footer</h5>
+               <ol>
+                 <li>Para alinear imagenes o elementos mezclados o incrustadas dentro de una etiqueta p junto al 
+                   texto le aplicamos la propiedad <u>vertical-align:middle</u>
+                </li>
+               </ol>
+
+               <h5>Estilos portafolio</h5>
+               <ol>
+                 <li></li>
+               </ol>
+
+
 
           </section><!--END CSS-->
 
