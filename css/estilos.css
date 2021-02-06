@@ -170,3 +170,19 @@ figure{/* borrar valor margen por defecto */
 .event-list-title{
     padding-left:10px;
 }
+.contact{
+    background-color: #056FFF;
+    color: white;
+    height:150px;
+    display: flex;
+    align-items: center;
+
+}
+.social{
+    border:2px rgb(240, 22, 22) solid;
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    border:2px  solid white;
+}
