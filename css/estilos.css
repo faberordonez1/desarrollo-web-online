@@ -131,3 +131,42 @@ figure{/* borrar valor margen por defecto */
 .footer img{
     vertical-align: middle;
 }
+.event-list{
+    display: flex;
+    background-color: #f4fbff;
+}
+.event{
+    margin: 10px;
+    width: 480px;
+    border-radius:10px ;
+    overflow: hidden;
+    flex-shrink:0;
+    
+}
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+.event-details{
+    margin:20px;
+    background-color: white;
+    margin:20px 40px;
+    margin-top:-40px ;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.event-description{
+    text-align: left;
+}
+.event-url{
+    border:1px solid #056fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #056FFF;
+    border-radius: 5px;
+}
+.event-list-title{
+    padding-left:10px;
+}
