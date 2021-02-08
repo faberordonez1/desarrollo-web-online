@@ -176,13 +176,54 @@ figure{/* borrar valor margen por defecto */
     height:150px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
-.social{
-    border:2px rgb(240, 22, 22) solid;
-}
+/* .social{ */
+    /* border:2px rgb(240, 22, 22) solid; */
+/* } */
 .social-link{
     width: 50px;
     height: 50px;
-    border:2px  solid white;
+    /* border:2px  solid whitE; */
+    display: inline-block;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+}
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+}
+.social-link.github{
+    background-image: url('../images/github.svg');
+}
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+}
+.form-email input{
+    padding: 10px 20px 10px 25px;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    background-image:url('../images/email.svg') ;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x:5px;
+}
+.form-email button{
+    display: block;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    padding:10px 30px;
+    width: 100px;
+    /* margin: 10px auto 0; */
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.form-email h3{
+    font-family: 'source sans pro', sans-serif;
 }
