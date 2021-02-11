@@ -1,5 +1,5 @@
 # Desarrollo-web-online
-Guias proyecto y archivos del curso
+Guias, proyecto y archivos del curso
 
 Guia 👉🏼 https://faberordonez1.github.io/desarrollo-web-online 📝
 

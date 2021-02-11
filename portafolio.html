@@ -10,124 +10,141 @@
     </head>
     <body>
         <header class="header">
-            <figure class="logo">
-                <img src="images/logo.png" alt="Logo Faber" width="70">
-            </figure>
-            <nav class="menu">
-                <ol>
-                    <li>
-                        <a class="link" href="#portafolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#eventos">Experiencia</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#contacto">Trabajemos juntos</a>     
-                    </li>
-                </ol>
-            </nav>
+            <div class="container">
+                <figure class="logo">
+                    <img src="images/logo.png" alt="Logo Faber" width="70">
+                </figure>
+                <nav class="menu">
+                    <ol>
+                        <li>
+                            <a class="link" href="#portafolio">Portafolio</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#eventos">Experiencia</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#contacto">Trabajemos juntos</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
         </header>
         <section class="hero"> 
-            <h1>
-                Hola..! soy <strong>Faber OrdoñeZ</strong><br>
-                Desarrollador Web <strong>Frontend</strong> <br>
-                HTML,CSS y <strong>Javascript</strong>
-            </h1>
-            <!--<img src="images/hero.png" width="500" height="300" alt="imagen principal del sitio"> -->
+            <div class="container">
+                <h1>
+                    Hola..! soy <strong>Faber OrdoñeZ</strong><br>
+                    Desarrollador Web <strong>Frontend</strong> <br>
+                    HTML,CSS y <strong>Javascript</strong>
+                </h1>
+                <figure>
+                    <img src="images/heroo.jpg" width="500" height="300" alt="imagen principal del sitio" class="hero-image">
+                </figure>
+            </div>
         </section>
         <section class="portfolio" id="portafolio">
-            <h2>Portafolio (Proyectos Destacados)</h2>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title" >Proyecto 1</h3>
-                    <h6 class="project-course" >Curso Git y Github</h6>
-                    <p class="project-date" ><small><strong>Fecha:</strong> 25/01/2021</small></p>
-                    <p class="project-url"><small><strong>Puedes ver lo en: </strong>faberordonez1.github.io</small></p>
-                    <p class="project-description" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque deserunt alias
-                    repellat quisquam porro eius magnam! Repellat iusto tenetur laudantium. Illo
-                    quasi eaque assumenda quam soluta labore enim vitae esse.</p>
-                </div>
-                <figure class="project-imageWrapper" >
-                    <img class="project-image" src="images/proyecto.jpg" alt="primer proyecto" width="500">
-                </figure>
-            </article>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title" >Proyecto 1</h3>
-                    <h6 class="project-course" >Curso Git y Github</h6>
-                    <p class="project-date" ><small><strong>Fecha:</strong> 25/01/2021</small></p>
-                    <p class="project-url"><small><strong>Puedes ver lo en: </strong>faberordonez1.github.io</small></p>
-                    <p class="project-description" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque deserunt alias
-                    repellat quisquam porro eius magnam! Repellat iusto tenetur laudantium. Illo
-                    quasi eaque assumenda quam soluta labore enim vitae esse.</p>
-                </div>
-                <figure class="project-imageWrapper" >
-                    <img class="project-image" src="images/proyecto.jpg" alt="primer proyecto" width="500">
-                </figure>
-            </article>
+            <div class="container">
+                
+                <h2>Portafolio (Proyectos Destacados)</h2>
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title" >Proyecto 1</h3>
+                        <h6 class="project-course" >Curso Git y Github</h6>
+                        <p class="project-date" ><small><strong>Fecha:</strong> 25/01/2021</small></p>
+                        <p class="project-url"><small><strong>Puedes ver lo en: </strong>faberordonez1.github.io</small></p>
+                        <p class="project-description" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque deserunt alias
+                        repellat quisquam porro eius magnam! Repellat iusto tenetur laudantium. Illo
+                        quasi eaque assumenda quam soluta labore enim vitae esse.</p>
+                    </div>
+                    <figure class="project-imageWrapper" >
+                        <img class="project-image" src="images/proyecto.jpg" alt="primer proyecto" width="500">
+                    </figure>
+                </article>
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title" >Proyecto 1</h3>
+                        <h6 class="project-course" >Curso Git y Github</h6>
+                        <p class="project-date" ><small><strong>Fecha:</strong> 25/01/2021</small></p>
+                        <p class="project-url"><small><strong>Puedes ver lo en: </strong>faberordonez1.github.io</small></p>
+                        <p class="project-description" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque deserunt alias
+                        repellat quisquam porro eius magnam! Repellat iusto tenetur laudantium. Illo
+                        quasi eaque assumenda quam soluta labore enim vitae esse.</p>
+                    </div>
+                    <figure class="project-imageWrapper" >
+                        <img class="project-image" src="images/proyecto.jpg" alt="primer proyecto" width="500">
+                    </figure>
+                </article>
+            </div>
         </section>
-        <h2 class="event-list-title">Mas Sobre mi experiencia</h2> 
+        <div class="container">
+            <h2 class="event-list-title">Mas Sobre mi experiencia</h2> 
+        </div>
         <section id="eventos" class="event-list">
-            <article class="event">
-                <figure class="event-imageWrapper">
-                    <img  class="event-image" src="images/evento.jpg" alt=""  width="500">
-                </figure>
-                <div class="event-details">
-                    <h3 class="event-title">Primera Conferencia</h3>
-                    <p class="event-description" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sapiente quasi quia aliquam iste vel, animi laboriosam incidunt illo nam optio consequuntur in quas nisi consectetur rerum necessitatibus nulla earum? </p>
-                    <a class="event-url" href="https://youtu.be/22HeWPja-fk" target="_blank">Ver conferencia</a>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageWrapper">
-                    <img  class="event-image" src="images/evento.jpg" alt=""  width="500">
-                </figure>
-                <div class="event-details">
-                    <h3 class="event-title">Primera Conferencia</h3>
-                    <p class="event-description" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sapiente quasi quia aliquam iste vel, animi laboriosam incidunt illo nam optio consequuntur in quas nisi consectetur rerum necessitatibus nulla earum? </p>
-                    <a class="event-url" href="https://youtu.be/22HeWPja-fk" target="_blank">Ver conferencia</a>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageWrapper">
-                    <img  class="event-image" src="images/evento.jpg" alt=""  width="500">
-                </figure>
-                <div class="event-details">
-                    <h3 class="event-title">Primera Conferencia</h3>
-                    <p class="event-description" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sapiente quasi quia aliquam iste vel, animi laboriosam incidunt illo nam optio consequuntur in quas nisi consectetur rerum necessitatibus nulla earum? </p>
-                    <a class="event-url" href="https://youtu.be/22HeWPja-fk" target="_blank">Ver conferencia</a>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageWrapper">
-                    <img  class="event-image" src="images/evento.jpg" alt=""  width="500">
-                </figure>
-                <div class="event-details">
-                    <h3 class="event-title">Primera Conferencia</h3>
-                    <p class="event-description" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sapiente quasi quia aliquam iste vel, animi laboriosam incidunt illo nam optio consequuntur in quas nisi consectetur rerum necessitatibus nulla earum? </p>
-                    <a class="event-url" href="https://youtu.be/22HeWPja-fk" target="_blank">Ver conferencia</a>
-                </div>
-            </article>
+            <div class="container">
+                <article class="event">
+                    <figure class="event-imageWrapper">
+                        <img  class="event-image" src="images/evento.jpg" alt=""  width="500">
+                    </figure>
+                    <div class="event-details">
+                        <h3 class="event-title">Primera Conferencia</h3>
+                        <p class="event-description" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sapiente quasi quia aliquam iste vel, animi laboriosam incidunt illo nam optio consequuntur in quas nisi consectetur rerum necessitatibus nulla earum? </p>
+                        <a class="event-url" href="https://youtu.be/22HeWPja-fk" target="_blank">Ver conferencia</a>
+                    </div>
+                </article>
+                <article class="event">
+                    <figure class="event-imageWrapper">
+                        <img  class="event-image" src="images/evento.jpg" alt=""  width="500">
+                    </figure>
+                    <div class="event-details">
+                        <h3 class="event-title">Primera Conferencia</h3>
+                        <p class="event-description" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sapiente quasi quia aliquam iste vel, animi laboriosam incidunt illo nam optio consequuntur in quas nisi consectetur rerum necessitatibus nulla earum? </p>
+                        <a class="event-url" href="https://youtu.be/22HeWPja-fk" target="_blank">Ver conferencia</a>
+                    </div>
+                </article>
+                <article class="event">
+                    <figure class="event-imageWrapper">
+                        <img  class="event-image" src="images/evento.jpg" alt=""  width="500">
+                    </figure>
+                    <div class="event-details">
+                        <h3 class="event-title">Primera Conferencia</h3>
+                        <p class="event-description" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sapiente quasi quia aliquam iste vel, animi laboriosam incidunt illo nam optio consequuntur in quas nisi consectetur rerum necessitatibus nulla earum? </p>
+                        <a class="event-url" href="https://youtu.be/22HeWPja-fk" target="_blank">Ver conferencia</a>
+                    </div>
+                </article>
+                <article class="event">
+                    <figure class="event-imageWrapper">
+                        <img  class="event-image" src="images/evento.jpg" alt=""  width="500">
+                    </figure>
+                    <div class="event-details">
+                        <h3 class="event-title">Primera Conferencia</h3>
+                        <p class="event-description" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sapiente quasi quia aliquam iste vel, animi laboriosam incidunt illo nam optio consequuntur in quas nisi consectetur rerum necessitatibus nulla earum? </p>
+                        <a class="event-url" href="https://youtu.be/22HeWPja-fk" target="_blank">Ver conferencia</a>
+                    </div>
+                </article>
+            </div>
         </section>
         <section id="contacto" class="contact">
-            <form action="/suscripcion/" class="form-email">
-                <h3>¿Creamos algo juntos?</h3>
-                <input type="text" placeholder="Dejame tu email" id="email">
-                <button type="submit">Enviar</button>
-            </form>
-            <div class="social">
-                <a href="https://twitter.com/faberordonez1" class="social-link twitter"></a>
-                <a href="https://facebook.com/faber.ordones" class="social-link facebook"></a>
-                <a href="https://gitHub.com/faberordonez1" class="social-link github"></a>
-                <a href="https://instagram.com/faberordonez1" class="social-link instagram"></a>
+            <div class="container">
+                <form action="/suscripcion/" class="form-email">
+                    <h3>¿Creamos algo juntos?</h3>
+                    <input type="text" placeholder="Dejame tu email" id="email">
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="social">
+                    <a href="https://twitter.com/faberordonez1" class="social-link twitter" target="_blank"></a>
+                    <a href="https://facebook.com/faber.ordones" class="social-link facebook" target="_blank"></a>
+                    <a href="https://gitHub.com/faberordonez1" class="social-link github" target="_blank"></a>
+                    <a href="https://instagram.com/faberordonez1" class="social-link instagram" target="_blank"></a>
+                </div>
             </div>
         </section>
         <footer class="footer">
-            <div>
-                <p>Curso de desarrollo Web Online 2021 <img src="images/logo.png" alt="" width="60"></p>
-            </div>
-            <div>
-                <p>Diseñado con ❤ By <a href="https://twitter.com/faberordonez1" target="_blank"> Faber OrdoñeZ </a> </p>
+            <div class="container">
+                <div>
+                    <p>Curso de desarrollo Web Online 2021 <img src="images/logo.png" alt="" width="60"></p>
+                </div>
+                <div>
+                    <p>Diseñado con ❤ By: <a href="https://twitter.com/faberordonez1" target="_blank"> Faber OrdoñeZ </a> </p>
+                </div>
             </div>
         </footer>
     </body>
