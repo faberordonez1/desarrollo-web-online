@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desarrollo Web Online</title>
+    <!-- Latest compiled and minified CSS -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+          <h1>Desarrollo Web 💻 <a href="docs/desarrollo-web-slides.pdf" target="_blank">📃</a></h1>
+          <hr />
+          <p>
+            Este curso es elemental para el Desarrollo web, ya sea frontend o backend,
+            en el vamos a ver que es el desarrolo web y que nesecitamos saber para iniciar en este mundo.
+          </p>
+
+          <div>
+              <h2>Introducción</h2>
+              <hr>
+                <h4>¿ Que es el desarrollo Web ?</h4>
+
+                <p>
+                Es todo lo que percibimos dentro del navegador (Ejem: facebook, twitter, Instagram etc.)
+                </p>
+                <p>
+                    <strong>Navegadores </strong> (Chrome, Safari, Edge, Internet Explorer etc.)
+                </p>
+
+                <h4>¿ Como funciona Internet ?</h4>
+                <p>Es la conexion entre Clientes, Internet y Servidor</p>
+                <p><strong>Clientes</strong>(Clients): Son los dispositivos que se comunican con un servidor (Ejem. Celular, laptop etc.)</p>
+                <p><strong>Internet </strong> Red o nube mediante la cual se comunican el cliente y un servidor</p>
+
+                <p><strong>Servidor</strong>(Server): Es un computador conectado en la red que esta encendido siempre
+                    y es donde guardamos nuestros proyectos web para que los clientes se conecten a traves de una red o dominio (ejem:  dominio.com etc).
+                    <i>Los servidores tambien son llamados hosting</i>
+                </p>
+
+                <h4> Profesiones del Desarrollo Web</h4>
+                <p>Existen 2 tipos : </p>
+                <h5>Frontend</h5>
+                <p>Encargado de cuidar toda la aparicencia y experiencia del usuario</p>
+                <p>Se encarga de transformar los diseños en codigo, tambien enlaza
+                    con los eventos del usuario (interacciones click etc), ademas la conexion 
+                    con el backend desde el lado del cliente</p>
+                <p>Existen subramas como arquitectos frontend, desarrollador javascript entre otros </p>
+                <p>El frontend debe manejar 3 tecnologias <strong>HTML,CSS y Javascript</strong></p>
+
+
+                <h5>Backend</h5>
+                <p>Resguardan los datos y seguridad de las aplicaciones</p>
+                <p>Se encarga del procesamineto y almacenamiento de los datos en la base de datos y de la seguridad, se encarga
+                    de todo los procesos que no son visibles
+                </p>
+                <p>Existen subramas como Zizagmin, Devops, desarrollador javascript entre otros</p>
+          </div>
+
+          <div>
+            <h4>Ruta de Aprendizaje Frontend</h4>
+            <ol>
+              <li>Git y gitHub</li>
+              <li>Desarrollo Web</li>
+              <li>Responsive Design</li>
+              <li>CCS Grid Layout</li>
+              <li>Animaciones para la Web</li>
+              <li>Post CSS Organiza codigo y sintaxis</li>
+              <li>JQUERY a JS -> javascript sin librerias</li>
+              <li>Fundamentos JavaScript</li>
+              <li>Webpack Encapsular codigo JS</li>
+              <li>React JS</li>
+              <li>Redux</li>
+              <li>React Router</li>
+            </ol>
+            <h5>Ajustes Basicos de VS Code <a href="https://platzi.com/clases/1350-html5-css3/13346-software-para-trabajar-en-desarrollo-web-e-introdu/">▶</a></h5>
+          </div>
+
+          <section>
+            <h2>HTML</h2>
+            <hr>
+            <h4>DOM</h4>
+            <p>DOM es el acrónimo de Document Object Model o Modelo de documento, y es la manera en que se representa el contenido del documento, de manera similar a un árbol de nodos. </p>
+               <p>A continuación, un ejemplo sencillo de la estructura del DOM:</p>
+               
+               <div class="alert alert-dark mt-3">
+                <samp>
+                  <ul>
+                    <li>Html
+                        <ul>
+                          <li>Head</li>
+                          <ul>
+                            <li>title</li>
+                            <li>meta</li>
+                          </ul>
+                        </ul>
+                        <ul>
+                          <li>Body
+                            <ul>
+                              <li>Header
+                                <ul>
+                                  <li>nav</li>
+                                </ul>
+                              </li>
+                              <li>Section
+                                <ul>
+                                  <li>article</li>
+                                </ul>
+                              </li>
+                              <li>Footer</li>
+                            </ul>
+                          </li>
+                          
+                        </ul>
+                    </li>
+                    
+                  </ul>
+                </samp>
+              </div>
+
+            <h4>Etiquetas HTML </h4>
+            <a href="https://allthetags.com/" target="_blank">listado de etiquetas 1 </a><a href="http://html5doctor.com/" target="_blank">  listado de etiquetas 2</a>
+            <P>Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.
+              <br>La sintaxis general de una etiqueta es:</P>
+              <div class="alert alert-dark mt-3">
+                <samp>Etiqueta apertura, Contenido, etiqueta de cierre </samp>
+              </div>
+              <p>Hay ciertas etiquetas que tienen una sintaxis diferente, ya que se cierran en sí mismas;
+                  es decir, no tienen etiqueta de cierre se cierran con / en la etiqueta de apertura</p>
+              <p>Algunas de las etiquetas más conocidas y usadas son:</p>
+              <p><strong>Etiquetas de cabecera (head):</strong>
+                <ul>
+                  <li>
+                    <strong>doctype:</strong> indica al navegador el tipo de documento que se está mostrando.
+                  </li>
+                <li>
+                  <strong>html:</strong> es la etiqueta que envuelve todo el documento
+                </li>
+                <li>
+                  <strong>head:</strong> es la cabecera del documento y contiene sub etiquetas que describen al documento o incluyen recursos adicionales.
+                </li>
+              </ul>
+              </p>
+
+              <p><strong>Etiquetas del cuerpo del documento (body):</strong>
+                <ul>
+                  <li><strong>article:</strong> diferencia partes del contenido que pueden vivir por sí mismas.</li>
+                  <li><strong>nav:</strong> para hacer menús de navegación</li>
+                  <li><strong>aside: </strong> contenido menos relevante, como publicidad, etc.</li>
+                  <li><strong>section: </strong>sirve para diferenciar las secciones principales del contenido.</li>
+                  <li><strong>header: </strong>cabecera del documento</li>
+                  <li><strong>footer: </strong>pie de pagina del documento</li>
+                  <li><strong>h1 - h6: </strong> titulos de nuestro sitio web</li>
+                  <li><strong>tables:</strong>tablas de contenidos, similar a la estructura de las hojas de calculo.</li>
+                  <li><strong>ul y ol: </strong>lista de items</li>
+                  <li><strong>div: </strong>cualquier división para organizar el contenido.</li>
+              </ul>
+              </p>
+            
+            <h4>Estructura de nuestro sitio web</h4>
+            <p>El proyecto que desarrollaremos en este curso se trata de un Portafolio Personal, incluirá una cabecera, navegación, un hero (área visual con información destacada), un área de proyectos y otra para eventos, y finalmente un pié de página con un formulario de contacto y enlaces a redes sociales.</p>
+            <p>El archivo index.html es el archivo que el navegador abre por defecto al acceder a un directorio en un servidor web.</p>
+            
+            
+            <h4>Atributos HTML</h4>
+            <p>Son los encargados de dar funciones adicionales a las etiquetas y se declaran en la etiqueta de apertura,<br><br>
+             
+              Por ejemplo en el atributo <strong>href</strong> de la etiqueta <strong>a</strong> debemos indicar el link al que queremos visitar
+            </p>
+            <div class="alert alert-dark mt-3">
+              <samp> nombreatributo="valorAtributo"  //estructura<br>
+               href="url.com"  //ejemplo
+              </samp>
+            </div>
+
+            <h4>Formularios HTML</h4>
+            <P>
+              Se usan para capturar o manejar informacion y enviarla al encargado del sitio o enviarlos al servidor y su etiqueta es
+              <strong>form</strong> y dentro de ella se utilizan las estiquetas que capturan datos como input,label,button etc.
+            </P>
+
+
+            <h4>Enlaces o navegacion entre secciones HTML</h4>
+            <p>Lo que caracteriza a la web como medio de comunicación es la navegación por medio de hipervínculos (links o enlaces). Esta conexión entre archivos permite al usuario elegir el sentido de la navegación.</p>
+            <p>En el HTML los enlaces se marcan con la etiqueta <strong>a</strong> y el atributo principal es href="" donde se escribe la ubicación del archivo de destino que puede estar en la misma carpeta que el archivo que lo está llamando, en otra carpeta del mismo sitio o en otro sitio web.</p>
+
+
+            <h4>Formas de agregar estilos en HTML</h4>
+            <p>Existen 3 formas de agregar estilos a nuestro sitio : </p>
+            <p><strong>Estilo en línea (Inline):</strong>
+              Utiliza el atributo <u>style</u>.
+              No es para nada recomendado ya que Html sirve para definir la estructura y semántica del código y no el aspecto visual, aquí estaríamos mezclando todo.</p>
+            <p><strong>Estilo interno (Internal):</strong>
+              Utiliza una etiqueta
+                <u>style</u>            
+              Separa en cierto modo, de una forma menos sucia (por decirlo así). Esta forma sigue sin ser la más recomendada porque seguimos mezclando lo que es el aspecto visual con la estructura y semántica del código.</p>
+            <p><STRONG> 	Estilo externo (External): </STRONG>
+              Utilizando un archivo CSS externo al documento HTML.
+              Esta es la forma más recomendada porque estamos separando totalmente la estructura y semántica con el aspecto visual.</p>
+            </section><!--END HTML-->
+
+          <section>
+            <h2>CSS</h2><a href="https://cssreference.io/">Listado atributos css</a>
+            <hr>
+            <h4>Reglas, Selectores,declaraciones propiedades y valores de CSS</h4>
+            <img src="images/selector.jpg" alt="" width="400" class="mb-4">
+
+            <h6>Reglas</h6>
+            <p>Es la declaracion completa que incluye selector, declaracion, propiedad y valor, a continuacion dejo un ejemplo</p>
+            <div class="alert alert-dark mt-3">
+              <samp>header{<br>
+                background:red;<br>
+              }<br><hr>
+              selector{<br>
+                propiedad:valor;<br>
+              }<br>
+              </samp>
+            </div>
+
+            <h6>Selectores</h6>
+            <p>Son la forma de identificar uno o mas elementos en nuestro HTML, funcionan con etiquetas, clases y ID y existen 3 tipos:</p>
+            <ol>
+              <li>
+                <strong>Etiqueta: </strong>Hace refencia directamente al nombre de la etiqueta html ejemplo (nav, header,section, div etc.)
+              </li>
+              <li>
+                <strong>Descendente: </strong>Es un elemento hijo de otro elemento de acuerdo a la estructura HMTL ejemplo (tagppal tagpadre taghijo etc)
+              </li>
+              <li>
+                <strong>Id y/o clase: </strong>Nos evita escribir un selector descendente tan encadenado grande y complejo, las clases  y ID son atributos dentro de HTML, 
+                su diferencia principal es que las clases se pueden usar las veces que se necesario y todos reciben el mismo estilo y el ID una unica vez, porque solo asigna estilo a un ID y los demas los ignora
+                <div class="alert alert-dark mt-3">
+                    <samp >#nombreID{<br>
+                      background:red;<br>
+                    }<br><hr>
+                    .nombreClase{<br>
+                      propiedad:valor;<br>
+                    }<br>
+                    </samp>
+                </div>
+            </ol>
+
+            <h6>Declaracion</h6>
+            <p>Son todos los valores que estan dentro de las llaves de los selectores y se componen de propiedades y valores, cada declaracion se separa con ;</p>
+
+            <h4>Estilos incluidos en el navegador</h4>
+            <p>Son los estilos que el navegador por defecto le asigna a la estructura HTML pueden cambiar segun el navegador o SO, por lo general al inspeccionar se identifican con la linea <u>user agent stylesheets</u> todos estos valores se modifican con CSS</p>
+
+
+
+            <h4>Unidades de medida  y colores <a href="https://platzi.com/blog/unidades-de-medida-en-css/" target="_blank">📝</a><a href="https://developer.mozilla.org/es/docs/Web/CSS/color_value">📃</a></h4>
+            <p>Dentro de CSS podemos representar un color de 3 formas:</p>
+            <h5>Colores</h5>
+            <ol>
+              <li>
+                 <strong>Palabra Clave: </strong> Por lo general son el nombre del color en ingles ejem: (blue, red, transparent, gray etc.) 
+              </li>
+              <li>
+                <strong>Hexadecimales rgb(),rgba(): </strong> Se utilizan para representar colores exactos, y estan 
+                compuestos por un numeral y 6 caracteres o pueden ser 3 en caso de que se repita el valor en el par(#FF0099),
+                cada par de caracteres equivale a una letra o color de acuerdo al termino RGB (red,green,blue). Los valores de cada caracter que conforman el hexadecimal deben estar conformados por 1 de los 16 diferentes valores 
+                (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F), donde el menor valor es 0 y el maximo es F, es decir, cuando el valor es cero hay ausencia de color por ende es color negro y cuando el valor es  F tiene todo el color
+                 y equivale a blanco, de acuerdo a las variacion de los caracteres se componen todos los diferentes colores a continuacion algunos ejemplos:
+                 <div class="alert alert-dark mt-3">
+                  <samp>
+                    RGB (Red,Green,Blue)(Rojo,Verde,Azul)<br>
+                    #FF0000 o #F00 => Rojo (Red)<br>
+                    #00FF00 o #0F0 => Verde (Green)<br>
+                    #0000FF o #00F => Azul (Blue)<br>
+                    #000000 o #000 => Negro <br>
+                    #FFFFFF o #FFF => Blanco<br>
+                    #F0F0F0 o #F0F0 => Gris
+                  </samp>
+                </div>
+                </li>
+              <li><strong>HSL (Hue,Saturacion,Luminosity)(Tono de color, Saturacion, Luminosidad): </strong> permite usar colores de manera similar a los hexadecimales, 
+                pero se estructuran de forma diferente:<br>
+                hsl(120,75%,50%)<br>
+                <u>El primer valor</u> del ángulo sigue las reglas de la trigonometría para medir los ángulos, tiene limites de 0 grados a 360 grados, y no se admiten numeros negativos.
+                Ej: 120 grados, 45 grados, 0 grados, 360grados etc.<br>
+                <u>El segundo valor</u> es para la saturación (saturación) del color. Su valor se expresa en porcentaje. Un 
+                valor igual al 100% representa saturación total del color y 0 es un ligero sombreado gris de saturación<br>
+                <u>El tercer valor</u> es para el brillo (ligereza). Su valor se expresa en porcentaje. Un valor igual al 100% resulta en color blanco y 0 en color negro, 
+                siendo el 50% el valor normal.<br><br>
+                <strong>HSLA = equivalen a (tonalidad, saturación, ligereza, alfa-opacity)</strong> es una manera extendida de la declaración HSL en la que un cuarto argumento define la opacidad del color. Este cuarto argumento es un número decimal entre 0 y 1.
+
+                se rige a las mismas reglas que el HLS, pero incluyendo la opacidad <u>campo A (opacidad alfa)</u> este valor admite decimales de 0 a 1 siendo 0 transparentes y 1 opaco. Los valores decimales se escriben con un punto de punto. Ejemplo: 0.5
+              </li>
+            </ol>
+            <h5>Pixeles</h5>
+            <P>Son la Unidades de medida dentro del mundo digital, y un pixel es la menor unidad 
+              homogenea de color que forma parte de un imagen digital, los pixel lo podemos ver si hacemos zoom al maximo a la imagen,
+              cada pixel es el pequeño cuadro que se puede observar.<br>
+              Esta unidad de medida en css  se utiliza para asignar tamaños a imagenes, texto, bordes, dimensiones, margenes, 
+              rellenos, etc.  aunque tambien existen otras unidades de medida como los REM,EM etc.
+              </P>
+            
+              <h4>Fuentes y Tipografias CSS</h4>
+              <p>En css podemos cambiar la fuente con el atributo <u>font-family:nombreFuente</u> esta propiedad tambien permite
+              agregar varios tipos de fuente separandolos con coma, para situaciones en las que el usuario no disponga de la fuente principal solicitada, automaticamente css continua con la
+              siguiente fuente.</p>
+
+              <p>Para que funcione cualquier fuente tipografica en css es importante que el usuario la tenga 
+                instalada en el equipo o enlazada de un sitio web de fuentes ejem (google fonts)</p>
+              <h6>Agregando fuente de Google fonts a css</h6>
+              <ol>
+                <li>Ingresar a Google Fonts</li>
+                <li>Buscar la fuente que necesitamos</li>
+                <li>Seleccionar los estilos que queremos en la fuente</li>
+                <li>En el botón superior derecho en donde podemos ver las fuentes seleccionadas y copiamos el Embed Standart. Si necesitamos otra fuente primero la agregamos</li>
+                <li>Pegamos el embed standart por dentro de la etiqueta head. Se recomienda pegarla antes de nuestra hoja de estilos.</li>
+              </ol>
+              <div class="alert alert-warning mt-3">
+                Cuando el nombre de una fuente tipográfica tiene mas de una palabra en css debemos encerrar su nombre en comillas simples. 
+              </div>
+              <h5>Propiedades de los textos</h5>
+              <p>Estas propiedades nos permiten modifcar tamaños, tipos, subrayados de las fuentes tipograficas a continuacion
+                el listado de algunas propiedades:
+              </p>
+              
+              <div class="alert alert-dark mt-3">
+                <samp>
+                  line-height // modificar el alto de linea<br>
+                  font-size // modificar el tamaño de la fuente<br>
+                  font-weight // modificar el peso de la fuente<br>
+                  font-style // modificar el estilo de la fuente<br>
+                  letter-spacing // modificar el espacio entre letras<br>
+                  text-transform // transformar la fuente (mayusculas, minuculas, etc)<br>
+                  text-decoration // moodificar la decoración de la fuente<br>
+                </samp>
+              </div>
+              
+              
+              <h4>Dimensiones fijas para elementos</h4>
+              <p>Con estas propiedades definimos los tamaños fijos de los elementos, las propiedades width y height
+                son la propiedades con las que se modifican y pueden recibir como valor cualquier unidad de medida</p>
+                <p>Si asignamos un alto inferior al del tamaño del contenido, el elemento inferior se sobrepondra</p>
+                
+                <h4>Background de color e imagen</h4>
+                <p>Los fondos en css se asignan con la propiedad background-color o background-image:url('ruta de la imagen') estas propiedades segun lo que quieras asignar</p>
+                <p>El color de los textos se asigna con la propiedad color a continuacion las propiedades: </p>
+                
+                <div class="alert alert-dark mt-3">
+                  <samp>
+                    background-color para agregar unn color de fondo<br>
+                    color para agregar un color al texto<br>
+                    text-decoration para modificar la decoración del texto<br>
+                    background-image para agregar una imagen de fondo<br>
+                    background-size para modificar el tamaño del background asignado<br>
+                    background-repeat para modificar la repetición en x o y del backgound<br>
+                    background-position para modificar la posición en x o y del bakground<br>
+                  </samp>
+                </div>
+
+                <h4>Bordes en CSS</h4>
+                <P>En CSS los bordes de definen con el atributo border y se le asignan 3 valores tamaño color estilo, 
+                  tambien existe la forma de asignar bordes de forma detallada y bordes por zonas, tambien podemos
+                  redondear las esquinas de los bordes, con la propiedad border-radius y tambien funciona por zonas de la
+                   misma forma que el border .
+                </P>
+                <div class="alert alert-dark mt-3">
+                  <samp>
+                    border: 1px black solid; // tamaño color estilo - forma corta<hr>
+                    border-width: 2px;// forma detallada<br>
+                    border-style:solid ;<br>
+                    border-color:black;<hr>
+                    border-top:1px black solid //Bordes por zona solo a un lado<br><hr>
+                    border-radius:10px;<br>
+                    border-top-right:10px;
+                  </samp>
+                </div>
+
+                <h4>Margen CSS</h4>
+                <p>En css el margin es el espacio que separa los contenedores (espacio hacia afuera) y se define con el atributo margin, 
+                  existe un concepto denominado <strong>margin collapsing</strong> en el que el margin
+                  del contenedor con mayor valor remplaza y anula al margin del contenedor de menor valor en la propiedad
+                </p>
+                <picture>
+                  <img src="images/margin-collapsin.jpg" width="450" alt="">
+                </picture>
+                <p class="alert alert-success mt-3">Esta propiedad tambien permite centrar facilmente los elementos que tienen anchos fijos
+                  y que tengan el atributo display:block. Se centra horizontalmente utilizando el atributo de
+                   la siguiente forma <br>
+                   <strong>margin : 0 auto;</strong>
+                </p>
+
+                <h4>Rellenos (padding) CSS</h4>
+                <P>
+                  En css el padding es el espacio que separa el contenido interno, del elemento contenedor 
+                  (espacio del borde del contenedor hacia adentro) y se define con el atributo padding,
+                  la diferencia con el margin radica en que el margin aplica del borde del elemento o contenedor hacía afuera 
+                  y el padding es del borde del elemento hacía adentro.
+                </P>
+
+                <h4>Modelo de caja</h4>
+                <pEl>El modelo de caja esta compuesto por tamaño, padding, border y margin, es decir el ancho total del elemento.
+                  El tamaño de un elemento es la suma entre (contenido + padding + border), 
+                  este modelo se puede alterar o modificar con los display o con la propiedad
+                <strong>box-sizing:border-box</strong>, al asignar esta propiedad toma el valor del ancho definido al elemento
+                y en base a este el ancho total nunca cambiara simpre se mantiene como se definio.
+              </p>
+
+              <h4>Tipos de Displays</h4>
+              <p>Display es la propiedad más importante para controlar estructuras. Cada elemento tiene un valor de
+                 display por defecto dependiendo de qué tipo de elemento sea. El valor por defecto para la mayoría 
+                 de los elementos es usualmente block (de bloque) o inline (en línea). Un elemento que es block 
+                 es comunmente llamado elemento block-level. Un elemento inline siempre es llamado elemento inline.</p>
+                 <img src="images/display.jpg" alt=""><br>
+                 <a href="https://www.youtube.com/watch?v=T9NHZUls32k">Video refuerzo ▶</a>
+                 <p><strong>Display Block: </strong>Hace que un elemento ocupe todo el ancho posible sin
+                   importar la cantidad de contenido<br>
+                   <strong> Display inline:</strong> Hace que el elemento ocupe unicamente el ancho del contenido, 
+                   permitiendo que al lado se posicione otro elemento que tenga la misma propiedad, por lo general las 
+                   tag de texto se comportan de esta manera. <i>La desventaja esta propiedad es que anula
+                    el atributo width definido al contenedor y todo el modelo de caja, unicamente ocupa el espacio del contenido</i><br>
+                   <strong>Display inline-block: </strong> Realiza lo mismo que display inline, con la ventaja que este atributo si respeta 
+                   el ancho asignado al contendedor, permitiendo manejar el width y facilita apilar varios elementos<br>
+                   <strong>Display flex:</strong> asume algunas propiedades por defecto que favorecen la alineación de los elementos internos.<br>
+                   <strong>Display grid:</strong> similar a flex, asume algunas propiedades por defecto organizando los contenidos en filas y columnas.<br>
+                   <strong>Display  none:</strong> oculta el elemento.
+                  </p>
+
+              <h4>Flexbox (diplay:flex) <a href="https://filisantillan.com/blog/el-gran-poder-de-css3-flexbox/">📝</a></h4>
+              <h6><a href="https://flexboxfroggy.com/#es">Game flexbox</a> <a href="http://www.flexboxdefense.com/">Game 2</a></h6>
+              <a href="https://flexbox.help/">Simulador de flexbox</a>
+              <p>Flexbox es un sistema de elementos flexibles que llega con la idea de olvidar estos mecanismos y 
+                acostumbrarnos a una mecánica más potente, limpia y personalizable, en la que los elementos HTML 
+                se adaptan y colocan automáticamente y es más fácil personalizar los diseños. Está especialmente 
+                diseñado para crear, mediante CSS, estructuras de una sóla dimensión.</p>
+              
+              <h6>Propiedades</h6>
+              <p><strong>Flex</strong>  Se le aplica al contenedor padre, y esto afectará a los hijos directos y por defecto se apilan la derecha 
+                Si existen varios elementos hijos la propiedad calcula el ancho automatico para que todos quepan en el ancho de la pantalla, perderán
+                la dimensión configurada modelo de caja o width<br>           
+                <strong>flex-shrink: </strong>Propiedad utilizada en los hijos que posean en el padre la propiedad display flex, 
+                identifica la capacidad de encogimiento respecto al ancho definido. esta propiedad funciona con valores 0 a 1, donde 1 equivale al 100% y cero es cero<br>
+                
+                <strong>flex direction:</strong> Esta propiedad se le asigna al padre y es donde se indica como
+                se alinean los hijos en 1 sola fila (row) (viene por defecto) o una sola columna(column)
+                <br><strong>flex-wrap:</strong> Propiedad del elemento padre, puede ser nowrap (por defecto) o wrap 
+                se utiliza para que los elementos que no caben en el ancho de la pantalla automaticamente pasen a la siguiente linea
+                y asi evitar el scroll horizontal
+              </p>
+              <p>La propiedad flex se le aplica al contenedor padre y afecta a sus hijos directos y los alinea, si en el ancho total
+                no caben todos los hijos, se altera el width y/o modelo de caja,reduciendo el width para hacer que todos 
+                quepan en la misma linea, si no queremos que se altere este width, debemos aplicar el atributo 
+                <strong>flex-shrink (capacidad de encogimiento)</strong> al hijo, esta propiedad funciona con valores  0 a 1,
+                donde 1 equivale al 100% y cero es cero, con esta propiedad a los hijos ya no se les modifica el ancho y si no 
+                caben en el ancho de la pantalla, generan un scroll a la derecha. Si queremos anular este scroll y que los elementos
+                que no caben caigan creando otra fila, le aplicamos al padre la propiedad <strong>flex-wrap:wrap</strong>
+                (por defecto esta en nowrap, es decir los hijos no caen a la siguiente linea)
+              </p>
+              <h5>Alineacion Horizontal flexbox (justify-content)</h5>
+
+              <div class="alert alert-warning mt-3">
+                <p>El orden de alineacion de estas propiedades (justify-content o align-items) depende 100% de la propiedad flex-diection
+                  aplicada al contenedor padre, la alineacion se pueden invertir de acuerdo este.
+                </p>
+              </div>
+              <p>Esto define la alineación a lo largo del eje principal (main-axis). Ayuda a distribuir el espacio libre adicional 
+                que queda cuando todos los elementos flexibles de una línea son inflexibles o son flexibles pero 
+                han alcanzado su tamaño máximo. También ejerce cierto control sobre la alineación de los elementos 
+                cuando desbordan la línea., necesitamos la propiedad justify-content, <br><u> *Cuando el elemento lleva la 
+                propiedad display: flex NO aplica el “margin collapsing”, por ende los márgenes se suman</u>
+
+              </p>
+              <p>
+                <strong>flex-start:</strong>(predeterminado) Alinea elementos al inicio o lado izquierdo del contenedor.<br>
+                <strong>flex-end:</strong> Alinea elementos al final o lado derecho del contenedor.<br>
+                <strong>center:</strong> Alinea elementos en el centro del contenedor.<br>
+                <strong>space-between:</strong> Muestra elementos con la misma distancia entre ellos a excepcion de los extremos.<br>
+                <strong>space-around:</strong> Muestra elementos con la misma separación alrededor de ellos si estan juntos se suma el espacio (no aplica margin collapsing)<br>
+                <strong>space-evenly</strong> Muestra la misma separacion entre ellos y en los extremos
+              </p>
+              <img src="images/flexbox-justify-content.jpg" alt="">
+
+              <h5>Alineacion Vertical flexbox (align-items)</h5>
+              <p>Esto define el comportamiento predeterminado de cómo se distribuyen los elementos flexibles a lo largo 
+                del eje transversal en la línea actual. Funciona igual a justify-content pero en el eje transversal 
+                (perpendicular al eje principal).</p>
+              <p><strong>flex-start:</strong> Alinea elementos a la parte superior del contenedor.<br>
+                <strong>flex-end:</strong> Alinea elementos a la parte inferior del contenedor.<br>
+                <strong>center:</strong> Alinea elementos en el centro (verticalmente hablando) del contenedor.<br>
+                <strong>baseline:</strong> Muestra elementos en la línea base del contenedor<br>
+                <strong>stretch:</strong> Elementos se estiran para ajustarse al contenedor.</p>
+                <img src="images/flexbox-align-items.svg" alt="" width="300">
+
+               <h5>Aplicando estilos al header</h5>
+               <ol>
+                  <li>Se aplica la propiedad flex al padre (header en este caso) y luego se alinea horizontalmente con justify-content.<br>
+                  </li>
+                  <li>No se recomienda centrar los elementos verticalmente desde el elemento flex
+                  principal o padre porque la etiqueta clickeable no abarcaria todo el ancho y alto,
+                  unicamnete tomaria lo que abarque el texto, ver siguiente punto</li>
+                  <li>Para que el area de la etiqueta clickeable ocupe todo el espacio disponible, 
+                  asignamos alto al fijo al contenedor ppal (header en este caso) y  a continuacion se lo heredamos
+                  a todos los hijos con la propiedad height-ineherit hasta llegar a la etiqueta clickeable <u> El objetivo del este alto fijo sera alinear los items verticalmente de acuerdo a esa altura
+                  </u></li>
+                  <li>Aplicamos flex a la etiqueta ol y dejamos por defecto, esto para alinear horizontalmente el listado de items</li>
+                  <li>Aplicamos flex a los ultimos elementos, es decir elementos clickeables, los centramos verticalmente y herdamos el alto que se viene heredando desde el header,
+                    <u>El objetivo es que el flexbox no rompa el alto heredado en los contenedores padres para que la tag clickeable tenga toda la zona activa.</u>
+                  </li>
+               </ol>
+
+               <h5>Estilos Seccion PPal  footer</h5>
+               <ol>
+                 <li>Para alinear imagenes o elementos mezclados o incrustadas dentro de una etiqueta p junto al 
+                   texto le aplicamos la propiedad <u>vertical-align:middle</u>
+                </li>
+               </ol>
+
+               <h5>Estilos Eventos Experiencia</h5>
+               <ol>
+                 <li>Asignar ancho a los cards para que tomen estilo al aplicar flex</li>
+                 <li>Aplicar flex al contenedor de los card</li>
+                 <li>Sacar el titulo del contendedor para que no interfiera con el flex aplicado a las card</li>
+                 <li>Para ajustar una imagen que se le cambiaron las proporciones de forma arbitraria se usa la propiedad
+                  <u>object-fit: cover;</u></li>
+                  <li>Cuando un elemento desborda del ancho del contenedor, podemos ocultar el desborde con la propiedad <u>overflow-hidden</u>
+                  al contenedor</li>
+                  <li>Para que los card conserven el tamaño original asigando, usamos la propiedad <u>flex-shirink:0</u> </li>
+                  <li>Para superponer elementos en la card utilizamos margin negativo</li>
+                  <li>Para poner un elemento por encima asignamos <u>position:relative</u> muchas veces tambien es necesario el Z-index</li>
+                  <li>Para alinear texto utilizamos la propiedad <u>text-align</u></li>
+                  <li>Estilizamos el H2 que esta fuera del contenedor</li>
+               </ol>
+               <h5>Estilos seccion de contacto</h5>
+               <ul>
+                 <li>Alineacion vertical con flexbox</li>
+                 <li>Add div con items link <u>(a)</u> para redes sociales</li>
+                 <li>Asignar ancho y alto a los link sociales que por defecto son (diplay:block), para que 
+                   tomen esos valores y se apilen uno al lado del otro es necesario aplicar
+                   display:inline-block a los elementos o flex al contenedor padre(div en este caso)
+                 </li>
+                 <li>Si queremos aplicarle estilo a un elemento que tenga 2 clases diferentes al mismo tiempo
+                   lo podemos hacer concatenando la segunda clase con el punto selector de clases y el nombre de la misma asi
+                   (.clase1.clase2) </li>
+                   <li>Agregamos el SVG como imagen de fondo del enlace</li>
+                   <li>con la propiedad (background-size:ancho y alto o palabra clave) adaptadamos 
+                     la imagen de fondo al contenedor</li>
+                   <li>Podemos cambiar el color de un SVG , Cambiando el color en el atributo fill=#color de la etiqueta path Dentro del SVG</li>
+                   <li>Add el icono como imagen de fondo del input; al icono y se asigna tamaño y alineacion</li>
+               </ul>
+
+               <h5>Finalizando el proyecto</h5>
+               <ul>
+                 <li>Alinear el contenido al centro con un nuevo div (y centramos con margin)
+                   que herede (inherit) los valores del contenedor principal
+                 </li>
+              </ul>
+          </section><!--END CSS-->
+
+    </div><!--END MAIN-->
+<hr>
+            <div> 
+              <h3>Recuadros</h3>
+
+                <div class="alert alert-success mt-3">
+                  Los programadores pasan 80% de su tiempo leyendo código y 20%
+                  escribiendo código, por esto es importante seguir buenas prácticas. Es
+                  importante ver las extensiones de los archivos. Los lenguajes son 90%
+                  similares y 20% diferentes
+                </div>
+
+                <div class="alert alert-dark mt-3">
+                  <samp>Alt+Shift+DownArrow o Shift+Alt+UpArrow = Duplica la linea(windows)<br>
+                    Shift + Alt + A //Comenta el trazo de codigo seleccionado<br>
+                    Ctrl + K + Ctrl +C comentarás esa linea de código. <br>
+                    Ctrl + K + ctrl + U descomentará el código<br>
+                    Ctrl + L // Selecciona Toda la Linea<br>
+                    ctrl+shitf+L // Selecciona todas las palabras igual a la seleccionada<br>
+                    ctrl+shitf+F // Selecciona todas las palabras igual a la escrita Buscador<br>
+                    <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Atajos VS Code</a>
+                  </samp>
+                </div>
+
+                <div class="alert alert-warning mt-3">
+                      Recuerda: Los nombres de las variables JS tienen algunas reglas:<br />
+                      <li>
+                        No pueden tener espacios, pueden tener numeros pero unicamente al
+                        inicio del nombre
+                      </li>
+                      <li>
+                        Debe empezar siempre con una letra, las minúsculas y las mayúsculas
+                        important, son diferentes
+                      </li>
+                      <li>No se permiten caracteres especiales como Ñ etc..</li>
+                      <li>Permite inicar el nobre con _ o con signo $ y funciona</li>
+                      <li>
+                        Identación, tienes bloques de código, estos deben ir un poco a la
+                        derecha
+                      </li>
+              </div>
+          </div> <!--END RECUADRO-->
+    
+  </body>
+</html>
