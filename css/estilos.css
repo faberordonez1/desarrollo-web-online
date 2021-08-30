@@ -236,7 +236,7 @@ figure{/* borrar valor margen por defecto */
     /* border:1px red solid; */
     margin:0 auto;
     display: inherit;
-    width: 1000px;
+    max-width: 1000px;
     height: inherit;
     justify-content: inherit;
     align-items: inherit;
