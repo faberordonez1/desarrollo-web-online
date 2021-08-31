@@ -564,7 +564,7 @@
 
           <section>  <!--Resposive Proyecto-->
           <h2>Responsive al proyecto</h2>
-          <p>Para empezar a aplicar responsive es necesario verificar que el Html cuente con la meta etiqueta para aplicar viewport en header del Html</p>
+          <p>Para empezar a aplicar responsive es necesario verificar que el Html cuente con la meta etiqueta para aplicar viewport en header del Html y definir los mediaquerys a utilizar, en este caso el modelo desktop first</p>
           <p>A continuacion se deben aplicar tamaños flexibles a los contenedores para que el contenido se adapate a diferentes tipos de pantalla</p>
 
           <h4>Anchos flexibles Contenedores</h4>
@@ -572,6 +572,12 @@
 
           <h4>Apilar Elementos con Wrap</h4>
           <p>A los elementos se le aplica la propiedad de flexbox wrap, para que se apilen uno debajo del otro cuando no caben en el ancho de la pantalla y evitar el scroll horizontal,es necesario tener en cuenta que las propiedades se flexbox del padre se heredan a los hijos, por ende se le puede aplicar al contenedor padre con la propiedad de flex</p>
+
+          <h4>Estilos al Header</h4>
+          <p>En este caso una buena opcion es comentar temporalmente las demas secciones para tener una vision clara de como se va a adaptar la seccion</p>
+          <p>Tenemos un contenedor con un ancho maximo definido para pantallas mas amplias, sin embargo no cuenta con un ancho minimo definido y esto lo hace depender del ancho de sus hijos, y si los hijos cuentan con un ancho muy pequeño la seccion se encoge a ese ancho, para resolver ese problema le agregamos un ancho dinamico al contenedor padre (.container), para que el contenedor tenga un ancho definido respetando el ancho maximo inicial</p>
+          <p>El problema se puede resolver aplicando la propiedad de flex:1  o la otra opcion es asignar width:100%, con ambas toman todo el ancho disponible, en este caso lo dejamos con flex</p>
+          <p>Se revisa el comportamiento de los mediqueris y se observa que en el mediaquery 768, es nesesario que los elementos se apilen en 1 columna, modificamos el mediaquery un pixel abajo 767</p>
 
 
           </section> <!--End Resposive Proyecto-->

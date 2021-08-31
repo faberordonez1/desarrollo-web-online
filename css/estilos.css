@@ -241,8 +241,15 @@ figure{/* borrar valor margen por defecto */
     margin:0 auto;
     display: inherit;
     max-width: 1000px;
+    flex: 1;
     height: inherit;
     justify-content: inherit;
     align-items: inherit;
     flex-wrap: inherit;
 }
+
+/*Responsive*/
+@media screen and (max-width:320px){ }
+@media screen and (max-width:480px){ }
+@media screen and (max-width:768px){ }
+@media screen and (max-width:1024px){ }
