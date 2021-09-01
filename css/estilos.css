@@ -251,5 +251,22 @@ figure{/* borrar valor margen por defecto */
 /*Responsive*/
 @media screen and (max-width:320px){ }
 @media screen and (max-width:480px){ }
-@media screen and (max-width:768px){ }
+@media screen and (max-width:768px){ 
+    .header{
+        display: block;
+        height:auto;
+    }
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        height:50px;
+    }
+    .header a {
+        justify-content:center;
+    }
+    .logo{
+        text-align:center;
+    }
+}
 @media screen and (max-width:1024px){ }

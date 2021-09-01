@@ -578,6 +578,13 @@
           <p>Tenemos un contenedor con un ancho maximo definido para pantallas mas amplias, sin embargo no cuenta con un ancho minimo definido y esto lo hace depender del ancho de sus hijos, y si los hijos cuentan con un ancho muy pequeño la seccion se encoge a ese ancho, para resolver ese problema le agregamos un ancho dinamico al contenedor padre (.container), para que el contenedor tenga un ancho definido respetando el ancho maximo inicial</p>
           <p>El problema se puede resolver aplicando la propiedad de flex:1  o la otra opcion es asignar width:100%, con ambas toman todo el ancho disponible, en este caso lo dejamos con flex</p>
           <p>Se revisa el comportamiento de los mediqueris y se observa que en el mediaquery 768, es nesesario que los elementos se apilen en 1 columna, modificamos el mediaquery un pixel abajo 767</p>
+          <p>Para resolver este problema modificamos el display del contenedor con la clase <u>.header</u> de flex por <u>display:block</u>, para que cuando llegue a ese tamaño (767px)se apilem a 1 columna</p>
+          <p>Despues de esto encontramos que este contenedor tiene un alto declarado y por ende los items apilados no alcanzan a ser visibles, para resolverlo cambiamos el alto a<u>height:auto;</u> </p>
+          <p>Ahora es necesario centrar los elementos, ya que estan en 1 columna, pero los items del menu aun estan en linea con display flex, pero los necesitamos en una columna, para ello se cambia la propiedad de display flex de los ol a <u>display:blok</u> </p>
+          <p>Los items <u>li</u> no tienen espacio entre ellos, le asginamos un alto de 50px </p>
+          <p>Para terminar centramos los item hijos del menu <u>a</u> con flex que ya lo tienen aplicado, cambiando la propiedad a <u>justify-content:center</u>, por último se debe centrar la imagen, para ello tomamos el contendor de la imagen (figure) con la clase logo y le aplicamos la propiedad text-align:center</p>
+
+          <h4>Estilos a Projects</h4>
 
 
           </section> <!--End Resposive Proyecto-->
