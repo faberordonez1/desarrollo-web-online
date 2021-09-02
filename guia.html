@@ -585,7 +585,14 @@
           <p>Para terminar centramos los item hijos del menu <u>a</u> con flex que ya lo tienen aplicado, cambiando la propiedad a <u>justify-content:center</u>, por último se debe centrar la imagen, para ello tomamos el contendor de la imagen (figure) con la clase logo y le aplicamos la propiedad text-align:center</p>
 
           <h4>Estilos a Projects</h4>
+          <p>Descomentamos todo el codigo y comentamos cada seccion por separado, la que no vamos a editar la dejamos comentada</p>
+          <p>Este contenedor tiene una imagen en un contenedor que esta definida con un ancho fijo de 500px y por ende no es dinamico, tomamos la clase de esta imagen y le asignamos un ancho del max-width:100% para que sea dinamico y adapte al tamaño que tenga el contenedor, cuando este sea menor que este tamaño fijo asignado</p>
+          <p>Tenemos un segundo problema y es que los contenedores hijos tiene un ancho fijo definido y la suma de estos sobrepasan el tamaño maximo total del contenedor padre, por ende al no caber uno de los 2 pasa a la siguiente fila, para resolverlo le asignamos un ancho del 50% a cada uno de los 2 contenedores, para que sean dinamicos y se adapten en una fila</p>
+          <p>Ahora nesesitamos que en anchos inferiores a 768 estos 2 contenedores hijos, pasen a una columna, para esto le aplicamos la propiedad display:block en el mediaquery inferior a 768, al contenedor padre con la clase project , sin embargo despues de aplicar esta propiedad los elementos hijos no abarcan el ancho total del contenedor, este problema se resuelve asignando un widt:auto a los 2 contenedores hijos (igual a width:100%; pero da mejor rendimiento). Al contenedor que contiene la imagen tambien le aplicamos text-align center para alinear la imagen</p>
 
+        <p>En mobile el texto no se adapta de forma correcta, para ello vamos a utilizar las unidades relativas, para esto se debe definir un tamaño de fuente 16px a project en responisve 767, ahora aplicamos unidades relativas EM en la funete a clases asignadas a los textos hijos de este contenedor  project-title {1.5 em} ; project-course{.7 em} ; project-date{1 em} ; project-url{1 em} ; project-description{.8 em}, con estos valores asignados, la fuente ya es relativa al tamaño de fuente del contenedor, ahora en pantallas menores a 480 es necesario reducir el tamaño de los textos, pero como ya son relativos en el mediaquery 480 solo le cambiamos el font-size:12px al contenedor padre y los demas se redimensionan de acuerdo a este. 
+        </p>
+        <p>Los margin tambien los ponemos en EM, para que sean relativos, entonces tomamos las clases de los textos  (project-course ; project-date; project-url) con margin y le aplicamos margin:.4em 0; en resposive (en desktop esta margin:10px 0;), al titulo titulo o H3 tiene un margin-bottom:10px, en responsive lo convertimos en relativo aplicandole el mismo margin-bottom:.3em;</p>
 
           </section> <!--End Resposive Proyecto-->
 
@@ -609,6 +616,7 @@
                     Ctrl + L // Selecciona Toda la Linea<br>
                     ctrl+shitf+L // Selecciona todas las palabras igual a la seleccionada<br>
                     ctrl+shitf+F // Selecciona todas las palabras igual a la escrita Buscador<br>
+                    ctrl+shitf+alt+🔽 // Puntero al principio de la linea selecciona las lines tantas veces como persion flecha<br>
                     <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Atajos VS Code</a>
                   </samp>
                 </div>
