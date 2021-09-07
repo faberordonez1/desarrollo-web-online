@@ -573,26 +573,40 @@
           <h4>Apilar Elementos con Wrap</h4>
           <p>A los elementos se le aplica la propiedad de flexbox wrap, para que se apilen uno debajo del otro cuando no caben en el ancho de la pantalla y evitar el scroll horizontal,es necesario tener en cuenta que las propiedades se flexbox del padre se heredan a los hijos, por ende se le puede aplicar al contenedor padre con la propiedad de flex</p>
 
-          <h4>Estilos al Header</h4>
-          <p>En este caso una buena opcion es comentar temporalmente las demas secciones para tener una vision clara de como se va a adaptar la seccion</p>
-          <p>Tenemos un contenedor con un ancho maximo definido para pantallas mas amplias, sin embargo no cuenta con un ancho minimo definido y esto lo hace depender del ancho de sus hijos, y si los hijos cuentan con un ancho muy pequeño la seccion se encoge a ese ancho, para resolver ese problema le agregamos un ancho dinamico al contenedor padre (.container), para que el contenedor tenga un ancho definido respetando el ancho maximo inicial</p>
-          <p>El problema se puede resolver aplicando la propiedad de flex:1  o la otra opcion es asignar width:100%, con ambas toman todo el ancho disponible, en este caso lo dejamos con flex</p>
-          <p>Se revisa el comportamiento de los mediqueris y se observa que en el mediaquery 768, es nesesario que los elementos se apilen en 1 columna, modificamos el mediaquery un pixel abajo 767</p>
-          <p>Para resolver este problema modificamos el display del contenedor con la clase <u>.header</u> de flex por <u>display:block</u>, para que cuando llegue a ese tamaño (767px)se apilem a 1 columna</p>
-          <p>Despues de esto encontramos que este contenedor tiene un alto declarado y por ende los items apilados no alcanzan a ser visibles, para resolverlo cambiamos el alto a<u>height:auto;</u> </p>
-          <p>Ahora es necesario centrar los elementos, ya que estan en 1 columna, pero los items del menu aun estan en linea con display flex, pero los necesitamos en una columna, para ello se cambia la propiedad de display flex de los ol a <u>display:blok</u> </p>
-          <p>Los items <u>li</u> no tienen espacio entre ellos, le asginamos un alto de 50px </p>
-          <p>Para terminar centramos los item hijos del menu <u>a</u> con flex que ya lo tienen aplicado, cambiando la propiedad a <u>justify-content:center</u>, por último se debe centrar la imagen, para ello tomamos el contendor de la imagen (figure) con la clase logo y le aplicamos la propiedad text-align:center</p>
+          <div>
+            <h4>Estilos al Header</h4>
+            <p>En este caso una buena opcion es comentar temporalmente las demas secciones para tener una vision clara de como se va a adaptar la seccion</p>
+            <p>Tenemos un contenedor con un ancho maximo definido para pantallas mas amplias, sin embargo no cuenta con un ancho minimo definido y esto lo hace depender del ancho de sus hijos, y si los hijos cuentan con un ancho muy pequeño la seccion se encoge a ese ancho, para resolver ese problema le agregamos un ancho dinamico al contenedor padre (.container), para que el contenedor tenga un ancho definido respetando el ancho maximo inicial</p>
+            <p>El problema se puede resolver aplicando la propiedad de flex:1  o la otra opcion es asignar width:100%, con ambas toman todo el ancho disponible, en este caso lo dejamos con flex</p>
+            <p>Se revisa el comportamiento de los mediqueris y se observa que en el mediaquery 768, es nesesario que los elementos se apilen en 1 columna, modificamos el mediaquery un pixel abajo 767</p>
+            <p>Para resolver este problema modificamos el display del contenedor con la clase <u>.header</u> de flex por <u>display:block</u>, para que cuando llegue a ese tamaño (767px)se apilem a 1 columna</p>
+            <p>Despues de esto encontramos que este contenedor tiene un alto declarado y por ende los items apilados no alcanzan a ser visibles, para resolverlo cambiamos el alto a<u>height:auto;</u> </p>
+            <p>Ahora es necesario centrar los elementos, ya que estan en 1 columna, pero los items del menu aun estan en linea con display flex, pero los necesitamos en una columna, para ello se cambia la propiedad de display flex de los ol a <u>display:blok</u> </p>
+            <p>Los items <u>li</u> no tienen espacio entre ellos, le asginamos un alto de 50px </p>
+            <p>Para terminar centramos los item hijos del menu <u>a</u> con flex que ya lo tienen aplicado, cambiando la propiedad a <u>justify-content:center</u>, por último se debe centrar la imagen, para ello tomamos el contendor de la imagen (figure) con la clase logo y le aplicamos la propiedad text-align:center</p>
+          </div>
 
-          <h4>Estilos a Projects</h4>
-          <p>Descomentamos todo el codigo y comentamos cada seccion por separado, la que no vamos a editar la dejamos comentada</p>
-          <p>Este contenedor tiene una imagen en un contenedor que esta definida con un ancho fijo de 500px y por ende no es dinamico, tomamos la clase de esta imagen y le asignamos un ancho del max-width:100% para que sea dinamico y adapte al tamaño que tenga el contenedor, cuando este sea menor que este tamaño fijo asignado</p>
-          <p>Tenemos un segundo problema y es que los contenedores hijos tiene un ancho fijo definido y la suma de estos sobrepasan el tamaño maximo total del contenedor padre, por ende al no caber uno de los 2 pasa a la siguiente fila, para resolverlo le asignamos un ancho del 50% a cada uno de los 2 contenedores, para que sean dinamicos y se adapten en una fila</p>
-          <p>Ahora nesesitamos que en anchos inferiores a 768 estos 2 contenedores hijos, pasen a una columna, para esto le aplicamos la propiedad display:block en el mediaquery inferior a 768, al contenedor padre con la clase project , sin embargo despues de aplicar esta propiedad los elementos hijos no abarcan el ancho total del contenedor, este problema se resuelve asignando un widt:auto a los 2 contenedores hijos (igual a width:100%; pero da mejor rendimiento). Al contenedor que contiene la imagen tambien le aplicamos text-align center para alinear la imagen</p>
+          <div>
+            <h4>Estilos a Projects</h4>
+            <p>Descomentamos todo el codigo y comentamos cada seccion por separado, la que no vamos a editar la dejamos comentada</p>
+            <p>Este contenedor tiene una imagen en un contenedor que esta definida con un ancho fijo de 500px y por ende no es dinamico, tomamos la clase de esta imagen y le asignamos un ancho del max-width:100% para que sea dinamico y adapte al tamaño que tenga el contenedor, cuando este sea menor que este tamaño fijo asignado</p>
+            <p>Tenemos un segundo problema y es que los contenedores hijos tiene un ancho fijo definido y la suma de estos sobrepasan el tamaño maximo total del contenedor padre, por ende al no caber uno de los 2 pasa a la siguiente fila, para resolverlo le asignamos un ancho del 50% a cada uno de los 2 contenedores, para que sean dinamicos y se adapten en una fila</p>
+            <p>Ahora nesesitamos que en anchos inferiores a 768 estos 2 contenedores hijos, pasen a una columna, para esto le aplicamos la propiedad display:block en el mediaquery inferior a 768, al contenedor padre con la clase project , sin embargo despues de aplicar esta propiedad los elementos hijos no abarcan el ancho total del contenedor, este problema se resuelve asignando un widt:auto a los 2 contenedores hijos (igual a width:100%; pero da mejor rendimiento). Al contenedor que contiene la imagen tambien le aplicamos text-align center para alinear la imagen</p>
+            
+            <p>En mobile el texto no se adapta de forma correcta, para ello vamos a utilizar las unidades relativas, para esto se debe definir un tamaño de fuente 16px a project en responisve 767, ahora aplicamos unidades relativas EM en la funete a clases asignadas a los textos hijos de este contenedor  project-title {1.5 em} ; project-course{.7 em} ; project-date{1 em} ; project-url{1 em} ; project-description{.8 em}, con estos valores asignados, la fuente ya es relativa al tamaño de fuente del contenedor, ahora en pantallas menores a 480 es necesario reducir el tamaño de los textos, pero como ya son relativos en el mediaquery 480 solo le cambiamos el font-size:12px al contenedor padre y los demas se redimensionan de acuerdo a este. 
+            </p>
+            <p>Los margin tambien los ponemos en EM, para que sean relativos, entonces tomamos las clases de los textos  (project-course ; project-date; project-url) con margin y le aplicamos margin:.4em 0; en resposive (en desktop esta margin:10px 0;), al titulo titulo o H3 tiene un margin-bottom:10px, en responsive lo convertimos en relativo aplicandole el mismo margin-bottom:.3em;</p>
+          </div>
 
-        <p>En mobile el texto no se adapta de forma correcta, para ello vamos a utilizar las unidades relativas, para esto se debe definir un tamaño de fuente 16px a project en responisve 767, ahora aplicamos unidades relativas EM en la funete a clases asignadas a los textos hijos de este contenedor  project-title {1.5 em} ; project-course{.7 em} ; project-date{1 em} ; project-url{1 em} ; project-description{.8 em}, con estos valores asignados, la fuente ya es relativa al tamaño de fuente del contenedor, ahora en pantallas menores a 480 es necesario reducir el tamaño de los textos, pero como ya son relativos en el mediaquery 480 solo le cambiamos el font-size:12px al contenedor padre y los demas se redimensionan de acuerdo a este. 
-        </p>
-        <p>Los margin tambien los ponemos en EM, para que sean relativos, entonces tomamos las clases de los textos  (project-course ; project-date; project-url) con margin y le aplicamos margin:.4em 0; en resposive (en desktop esta margin:10px 0;), al titulo titulo o H3 tiene un margin-bottom:10px, en responsive lo convertimos en relativo aplicandole el mismo margin-bottom:.3em;</p>
+          <div>
+            <h4>Seccion Eventos</h4>
+            <p>Al contenedor de eventos o card se le cambia el ancho fijo (480px) por un ancho dinamico porcentual, para que cada uno ocupe el 48% + 1% para el margin y que en el ancho total de la ventana (100%) puedan caber 2 eventos</p>
+            <p>En resposive 767px pasamos los eventos a 1 columna, le aplicamos un width:auto al contenedor o card de eventos, despues de esto se genera un scroll horizontal porque este contenedor tiene la propiedad flex-shirink:0; para resolverlo, reseteamos la propiedad con el valor de flex-shirink:initial, tambien funciona cambiando el 0 por 1 </p>
+            <p>
+              La imagen no se ajusta al ancho porque tiene un ancho fijo definido, se asinga por un valor dinamico width:100% a la imagen con la clase event-image;
+            </p>
+            <p>En pantallas mas pequeñas a 480 reducimos el valor del margin del contenedor .event-details lo dejamos en -40px 10px 10px 10px o relativo al font-size con -2em 1em 1em 1em. Esta propiedad tambien se la podemos aplicar al padding lo dejamos en 1em</p>
+          </div>
 
           </section> <!--End Resposive Proyecto-->
 

@@ -153,8 +153,8 @@ figure {
   flex-wrap: wrap;
 }
 .event {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
@@ -262,6 +262,10 @@ figure {
   .project-details {
     font-size: 12px;
   }
+  .event-details{
+    margin: -2em 1em 1em 1em;
+    padding: 1em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -313,6 +317,13 @@ figure {
   .project-date,
   .project-url {
     margin: 0.4em 0;
+  }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+  img.event-image{
+    width: 100%;
   }
 }
 
