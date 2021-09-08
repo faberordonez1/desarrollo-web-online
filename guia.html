@@ -611,6 +611,10 @@
             <h4>Contacto y Footer</h4>
             <p>En 480PX se apila el contenido a 1 columna y los elementos no caben en la altura estatica de la seccion contacto (.contact), para resolverlo, cambiamos el valor estatico por height:auto;, tambien le aplicamos un padding de 1.5em 0; para que los elementos se vean separados del contenedor</p>
             <p>Ahora se debe centrar los elementos para esto le aplicamos text-align:center al mismo contenedor y cambiamos la propiedad display a block, (Tambien funciona cambiando la propiedad de flex a justify-content:center), el boton no se centra, pero esto sucede porque no tiene margin auto a los costados, a este boton le asignamos margin 1em auto, el h3 tiene un margin-top que genera  mas espacio en esa area, lo quitamos asigandole 0</p>
+            <p>El footer en 480px tiene el problema que no se centran los elementos, para centrar cambiamos la propiedad de display:flex a display block, ahora con la propiedad text-align:center centramos los elementos, (tambien se puede hacer con flex, pero se debe aplicar un display:block para centrar la imagen o logo</p>
+            <p>Como estos elementos tienen un margin definido, se genera un <u>margin collapsing</u>, se puede resolver agregando un padding de 1 px o margin de 1px al contenedor, en este caso lo resolvemos con un border 1px transparent</p>
+            <p>Para centrar el logo del footer le aplicamos display:block y margin .7em auto;</p>
+            <p>En responsive tenemos un problema y es que el contenedor principal no tiene espacio con los elemnetos, para resolverlo le aplicamos un padding de 0 1em al .container en el mediaquery de 1024, con esto evita que los elementos se peguen al borde de pantalla</p>
           </div>
 
           </section> <!--End Resposive Proyecto-->

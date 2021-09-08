@@ -278,6 +278,15 @@ figure {
   .form-email h3{
     margin-top: 0;
   }
+  .footer{
+    display: block;
+    text-align:center;
+    border:1px solid transparent;
+  }
+  .footer img{
+    display: block;
+    margin: .7em auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -340,4 +349,7 @@ figure {
 }
 
 @media screen and (max-width: 1024px) {
+  .container{
+    padding: 0 1em;
+  }
 }
