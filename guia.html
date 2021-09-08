@@ -607,6 +607,11 @@
             </p>
             <p>En pantallas mas pequeñas a 480 reducimos el valor del margin del contenedor .event-details lo dejamos en -40px 10px 10px 10px o relativo al font-size con -2em 1em 1em 1em. Esta propiedad tambien se la podemos aplicar al padding lo dejamos en 1em</p>
           </div>
+          <div>
+            <h4>Contacto y Footer</h4>
+            <p>En 480PX se apila el contenido a 1 columna y los elementos no caben en la altura estatica de la seccion contacto (.contact), para resolverlo, cambiamos el valor estatico por height:auto;, tambien le aplicamos un padding de 1.5em 0; para que los elementos se vean separados del contenedor</p>
+            <p>Ahora se debe centrar los elementos para esto le aplicamos text-align:center al mismo contenedor y cambiamos la propiedad display a block, (Tambien funciona cambiando la propiedad de flex a justify-content:center), el boton no se centra, pero esto sucede porque no tiene margin auto a los costados, a este boton le asignamos margin 1em auto, el h3 tiene un margin-top que genera  mas espacio en esa area, lo quitamos asigandole 0</p>
+          </div>
 
           </section> <!--End Resposive Proyecto-->
 

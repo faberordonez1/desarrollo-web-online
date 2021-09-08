@@ -266,6 +266,18 @@ figure {
     margin: -2em 1em 1em 1em;
     padding: 1em;
   }
+  .contact{
+    height:auto;
+    padding:1.5em 0;
+    display:block;
+    text-align: center;
+  }
+  .form-email button{
+    margin: 1em auto;
+  }
+  .form-email h3{
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
