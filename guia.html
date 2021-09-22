@@ -617,6 +617,19 @@
             <p>En responsive tenemos un problema y es que el contenedor principal no tiene espacio con los elemnetos, para resolverlo le aplicamos un padding de 0 1em al .container en el mediaquery de 1024, con esto evita que los elementos se peguen al borde de pantalla</p>
           </div>
 
+          <div>
+            <h4>Hero seccion Ppal</h4>
+            <p>Primero se debe cambiar el alto fijo por un alto auto a el contenedor hero</p>
+            <p>Ahora se debe posicionar la imagen y el texto del hero, en desktop la ponemos cada uno al 48% </p>
+            <p>En movil ponemos la imagen como fondo del texto, aplicando la propiedad position:absolute y al ser absulte se debe asignar position:relative al contenedor (hero) para que sea relativo a este</p>
+            <p>Al texto le aplicamos un position:initial y un z-index:20 (mayor), para que aparezca delante de la imagen y a la imagen un z-index:10 (menor) para que se muestre atras</p>
+            <p>Ahora la imagen no se adapta, para resolverlo y que ocupe todo el ancho, sin respetar el padding cambiamos las propiedades top,right,bottom y left a cero y un width:100%</p>
+            <p>La imagen se esta desbordando al contenedor inferior, para resolver esto se aplica la propiedad <u>overflow:hidden</u> al contenedor hero</p>
+            <p>Para fadaptar el espacio le aplicamos un padding al texto de 2em, para que este estire el espacio del contenedor</p>
+            <p>En 480 reducimos el tamaño del h1 a 1.5em, para que se vea mejor y en 320 1.2em</p>
+            <p>En 320px Reducimos el padding del hero, a padding:2em 1em</p>
+          </div>
+
           </section> <!--End Resposive Proyecto-->
 
     </div><!--END MAIN-->

@@ -16,7 +16,8 @@ h6 {
   font-family: "fjalla one", sans-serif;
 }
 h1 {
-  font-size: 40px;
+  width: 48%;
+  font-size: 2.5em;
   line-height: 1.5;
   font-weight: normal;
   letter-spacing: -0.2px;
@@ -36,19 +37,24 @@ h2 {
   margin-bottom: 40px;
 }
 .hero {
-  height: 300px;
-  /* background-image: url('../images/heroo.jpg'); */
+  height: auto;
   background-color: #1d252c;
-  background-size: 500px 300px;
-  background-repeat: no-repeat;
-  background-position-x: right;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* background-image: url('../images/heroo.jpg'); 
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;*/
 }
 .hero-image {
   object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.hero figure{
+  width: 48%;
 }
 .portfolio {
   background: #fafafa;
@@ -256,9 +262,109 @@ figure {
 }
 
 /*Responsive*/
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 1024px) {
+  .container{
+    padding: 0 1em;
+  }
+}
+@media screen and (max-width:991px){
+  h1{
+    font-size: 2em;
+  } 
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto;
+  }
+  .header ol {
+    display: block;
+  }
+  .header ol li {
+    height: 50px;
+  }
+  .header a {
+    justify-content: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  .hero{
+    position: relative;
+    padding: 2em;
+    overflow: hidden;
+    min-height: 15em;
+  }
+  h1{
+    position: initial;
+    z-index: 20;
+    width: 100%;
+    font-size: 2.4em;
+    text-align: center;
+  }
+  .hero figure{
+    width: 100%;
+  }
+  .hero-image{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    left:0;
+    z-index: 10;
+    width: 100%;
+  }
+  .project {
+    display: block;
+  }
+  .project-details {
+    width: auto;
+    font-size: 16px;
+  }
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+  
+  .project-course {
+    font-size: 0.7em;
+  }
+  .project-date {
+    font-size: 1em;
+  }
+  .project-url {
+    font-size: 1em;
+  }
+  .project-description {
+    font-size: 0.8em;
+  }
+  .project-course,
+  .project-date,
+  .project-url {
+    margin: 0.4em 0;
+  }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+  img.event-image{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
+  .hero{
+    padding: 0 1em;
+    min-height:12em;
+  }
+  h1{
+    font-size: 1.5em;
+  }
   .project-details {
     font-size: 12px;
   }
@@ -288,68 +394,11 @@ figure {
     margin: .7em auto;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .header {
-    display: block;
-    height: auto;
+@media screen and (max-width: 320px) {
+  .hero{
+    min-height: 9em;
   }
-  .header ol {
-    display: block;
-  }
-  .header ol li {
-    height: 50px;
-  }
-  .header a {
-    justify-content: center;
-  }
-  .logo {
-    text-align: center;
-  }
-  .project {
-    display: block;
-  }
-  .project-details {
-    width: auto;
-    font-size: 16px;
-  }
-  .project-imageContainer {
-    width: auto;
-    text-align: center;
-  }
-  .project-title {
-    font-size: 1.5em;
-    margin-bottom: 0.3em;
-  }
-
-  .project-course {
-    font-size: 0.7em;
-  }
-  .project-date {
+  h1{
     font-size: 1em;
-  }
-  .project-url {
-    font-size: 1em;
-  }
-  .project-description {
-    font-size: 0.8em;
-  }
-  .project-course,
-  .project-date,
-  .project-url {
-    margin: 0.4em 0;
-  }
-  .event{
-    width: auto;
-    flex-shrink: initial;
-  }
-  img.event-image{
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container{
-    padding: 0 1em;
   }
 }
