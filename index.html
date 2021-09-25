@@ -163,12 +163,11 @@
             boton.addEventListener('click', hideShow);
 
             function hideShow(){
+                console.log(menu);
                 if(menu.classList.contains('is-active')){
-                    console.log("retirad"+ menu);
                     menu.classList.remove('is-active');
                 }else{
                     menu.classList.add('is-active');
-                    console.log("puesta"+ menu)
                 }
             }
         </script>
