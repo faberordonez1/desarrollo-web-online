@@ -156,5 +156,21 @@
                 </div>
             </div>
         </footer>
+        <script>
+            const menu = document.querySelector(".menu");
+            const boton = document.querySelector(".icono_menu");
+            /*console.log(menu);*/
+            boton.addEventListener('click', hideShow);
+
+            function hideShow(){
+                if(menu.classList.contains('is-active')){
+                    console.log("retirad"+ menu);
+                    menu.classList.remove('is-active');
+                }else{
+                    menu.classList.add('is-active');
+                    console.log("puesta"+ menu)
+                }
+            }
+        </script>
     </body>
 </html>

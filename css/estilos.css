@@ -36,7 +36,7 @@ h2 {
   font-size: 24px;
   margin-bottom: 40px;
 }
-.icono_menu{
+i.icono_menu{
   display: none;
   position: fixed;
   z-index: 40;
@@ -289,8 +289,25 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
-  .icono_menu{
+  i.icono_menu{
     display: block;
+  }
+  .menu{
+    position: fixed;
+    z-index: 35;
+    left:-100vw;/*Oculto defecto*/
+    top:0;
+    bottom:0;/*Estira en H*/
+    width: 100vw;
+    height: 100vh;
+    /*bottom: 0;*/
+    background-color: #026fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu.is-active{
+    left:0;
   }
   .header {
     display: block;
@@ -298,12 +315,19 @@ figure {
   }
   .header ol {
     display: block;
+    height: auto; /*centrar menu*/
   }
   .header ol li {
-    height: 50px;
+    height: 60px;
   }
   .header a {
     justify-content: center;
+    font-size: 2em;
+    line-height: 2em;
+  }
+  .menu a:hover{
+    color: rgb(236, 235, 235);
+    text-decoration: underline;
   }
   .logo {
     text-align: center;
