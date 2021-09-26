@@ -157,11 +157,10 @@
             </div>
         </footer>
         <script>
+            /*Mostrar menu*/
             const menu = document.querySelector(".menu");
-            const boton = document.querySelector(".icono_menu");
-            /*console.log(menu);*/
-            boton.addEventListener('click', hideShow);
-
+            const boton = document.querySelector(".icono_menu");          
+            /*console.log(menu);*/   
             function hideShow(){
                 console.log(menu);
                 if(menu.classList.contains('is-active')){
@@ -170,6 +169,20 @@
                     menu.classList.add('is-active');
                 }
             }
+            
+            /*Mrediaquery JS, para inactivar eventos*/
+            const tablet =  window.matchMedia('screen and (max-width: 767px)');
+            tablet.addListener(validation);/*escucha los cambios*/
+            
+            function validation(event){
+                if(event.matches){
+                    boton.addEventListener('click', hideShow);
+                    console.log(event);
+                }else{
+                    boton.removeEventListener('click', hideShow);
+                }
+            }
+
         </script>
     </body>
 </html>
