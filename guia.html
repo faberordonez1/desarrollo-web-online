@@ -632,6 +632,29 @@
 
           </section> <!--End Resposive Proyecto-->
 
+          <section><!-- Remote debbugging -->
+              <div>
+                <h2>Remote debugging</h2>
+                <p>Para hacer este proceso debemos instalar un servidor de archivos estaticos, se puede crear con cualquier lenguaje de programcion  backend, en este caso instalamos node version LTS</p>
+                <p>Despues de instalado se debe abrir la terminal y ejecutar los siguiente comandos, para validar si Node y npm esta instalado</p>
+                <pre class="alert alert-dark col-2">
+node -v
+npm -v
+                </pre>
+                <p>Se nesecita instalar el modulo de nmp static server, para esto se debe ejecutar la consola en modo administrador, y ejcutamos el siguiente comando con el que se instalara de manera globa
+                  <pre class="alert alert-dark col-4">
+ npm -g install static-server
+                 </pre>
+                 <p>Ahora se debe abrir la carperta del proyecto y ejecutar el comando </p>
+                 <h4>IOS</h4>
+                 <p>Se debe conectar el USB al equipo IOS y abrimos el navegador safari de una Mac, ya que solo con safari funciona el inspector de elementos, habilitamos el modo desarrollador en safari en preferencias>avanzado> habilita el menu de desarrollo</p>
+                 <p>Para inspeccionar en la pestaña desarrollo de safari, seleccionamos el dispositivo IOS, y aparece el inspector de elementos y funciona en tiempo real, la inspeccion desde el mac a IOS</p>
+                 <h4>Android</h4>
+                 <p>En este caso se deb activar el modo desarrollador y posteriormente el modo USB, a continuacion conectamos el dispositivo al PC y se abre chrome en la siguiente url <u>chrome://inspect/</u>, ahora se debe abrir la pagina a inspeccionar en chrome del movil y poteriormente buscar esa página en chrome del PC,para asi poder inspeccionarla</p>
+              </div>
+          </section>
+            
+
     </div><!--END MAIN-->
 <hr>
             <div> 
