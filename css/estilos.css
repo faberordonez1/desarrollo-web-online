@@ -278,8 +278,14 @@ figure {
 /*Responsive*/
 
 @media screen and (max-width: 1024px) {
+  .portfolio{
+    padding:0;
+  }
   .container{
     padding: 0 1em;
+  }
+  .event-list-title{
+    margin-left: 0;
   }
 }
 @media screen and (max-width:991px){
@@ -289,6 +295,10 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+  h2{
+    font-size:1.2em;
+    margin:.5em 0;
+  }
   i.icono_menu{
     display: block;
   }
@@ -301,7 +311,7 @@ figure {
     width: 100vw;
     height: 100vh;
     /*bottom: 0;*/
-    background-color: #026fff;
+    background-color:rgba(2,111,255,.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -383,7 +393,7 @@ figure {
     font-size: 1em;
   }
   .project-description {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .project-course,
   .project-date,
@@ -407,7 +417,7 @@ figure {
     font-size: 1.5em;
   }
   .project-details {
-    font-size: 12px;
+    font-size: 14px;
   }
   .event-details{
     margin: -2em 1em 1em 1em;
@@ -442,4 +452,8 @@ figure {
   h1{
     font-size: 1em;
   }
+  .social-link {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
 }
