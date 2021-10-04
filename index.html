@@ -157,7 +157,7 @@
             </div>
         </footer>
         <script>
-            /*Mostrar menu*/
+            /*Mostrar menu responsive*/
             const menu = document.querySelector(".menu");
             const boton = document.querySelector(".icono_menu");          
             /*console.log(menu);*/   
@@ -170,9 +170,9 @@
                 }
             }
             
-            /*Mrediaquery JS, para inactivar eventos*/
+            /*Mediaquery JS, para inactivar eventos*/
             const tablet =  window.matchMedia('screen and (max-width: 767px)');
-            tablet.addListener(validation);/*escucha los cambios*/
+            tablet.addListener(validation);/*escucha los cambios de pantall*/
             
             function validation(event){
                 if(event.matches){
@@ -181,6 +181,8 @@
                     boton.removeEventListener('click', hideShow);
                 }
             }
+            //Activar el menu responsive cuando carga la página en telefonos pequeños
+            validation(tablet);
 
         </script>
     </body>

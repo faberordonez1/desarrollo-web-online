@@ -301,7 +301,7 @@ figure {
     width: 100vw;
     height: 100vh;
     /*bottom: 0;*/
-    background-color: #026fff;
+    background-color:rgba(2,111,255,.8);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -578,6 +578,8 @@
             <p>En este caso una buena opcion es comentar temporalmente las demas secciones para tener una vision clara de como se va a adaptar la seccion</p>
             <p>Tenemos un contenedor con un ancho maximo definido para pantallas mas amplias, sin embargo no cuenta con un ancho minimo definido y esto lo hace depender del ancho de sus hijos, y si los hijos cuentan con un ancho muy pequeño la seccion se encoge a ese ancho, para resolver ese problema le agregamos un ancho dinamico al contenedor padre (.container), para que el contenedor tenga un ancho definido respetando el ancho maximo inicial</p>
             <p>El problema se puede resolver aplicando la propiedad de flex:1  o la otra opcion es asignar width:100%, con ambas toman todo el ancho disponible, en este caso lo dejamos con flex</p>
+
+            <h6>Header responsive</h6>
             <p>Se revisa el comportamiento de los mediqueris y se observa que en el mediaquery 768, es nesesario que los elementos se apilen en 1 columna, modificamos el mediaquery un pixel abajo 767</p>
             <p>Para resolver este problema modificamos el display del contenedor con la clase <u>.header</u> de flex por <u>display:block</u>, para que cuando llegue a ese tamaño (767px)se apilem a 1 columna</p>
             <p>Despues de esto encontramos que este contenedor tiene un alto declarado y por ende los items apilados no alcanzan a ser visibles, para resolverlo cambiamos el alto a<u>height:auto;</u> </p>
@@ -615,6 +617,35 @@
             <p>Como estos elementos tienen un margin definido, se genera un <u>margin collapsing</u>, se puede resolver agregando un padding de 1 px o margin de 1px al contenedor, en este caso lo resolvemos con un border 1px transparent</p>
             <p>Para centrar el logo del footer le aplicamos display:block y margin .7em auto;</p>
             <p>En responsive tenemos un problema y es que el contenedor principal no tiene espacio con los elemnetos, para resolverlo le aplicamos un padding de 0 1em al .container en el mediaquery de 1024, con esto evita que los elementos se peguen al borde de pantalla</p>
+            <p>Por ultimo agregamos los scripts en js, para activar y desactivar el menu</p>
+            <pre class="alert alert-dark">
+/*Mostrar menu responsive*/
+const menu = document.querySelector(".menu");
+const boton = document.querySelector(".icono_menu");          
+/*console.log(menu);*/   
+function hideShow(){
+    console.log(menu);
+    if(menu.classList.contains('is-active')){
+        menu.classList.remove('is-active');
+    }else{
+        menu.classList.add('is-active');
+    }
+}
+
+/*Mediaquery JS, para inactivar eventos*/
+const tablet =  window.matchMedia('screen and (max-width: 767px)');
+tablet.addListener(validation);/*escucha los cambios de pantall*/
+
+function validation(event){
+    if(event.matches){
+        boton.addEventListener('click', hideShow);
+    }else{
+        boton.removeEventListener('click', hideShow);
+    }
+}
+//Activar el menu sin depender del cambio de ancho de pantalla, cuando carga la página en telefonos pequeños
+validation(tablet);
+                              </pre>
           </div>
 
           <div>
